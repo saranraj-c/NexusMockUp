@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="Article" />
+    <meta property="og:site_name" content="iBeingHuman/MyNutritionAdvisor" />
+    <meta name="description" content="iBeingHuman.com/MyNutritionAdvisor offers diet, nutrition and fitness tips for a healthier lifestyle. Achieve your health goals with iBeingHuman.com&#039;s practical food and fitness tools, expert resources and an engaged community." />
+    <meta name="pagetype" content="home" />
+    <title>CRM Nexus Anywhere</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="">
+    <div id="parent-wrapper">
+        <header>
+            <!-- Nav Menu's -->
+            <nav class="nav navbar-nav navbar-fixed-top" role="navigation">
+                <div id="overlay"></div>
+                <!-- Brand and toggle get grouped - mobile display -->
+                <div class="row header-logo">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 navbar-header inner-top-left h60">
+                        <button type="button"
+								class="navbar-toggle collapsed navbar-left"
+								id="icon-bar-responsive"
+								data-toggle="collapse"
+								data-target="#navbar-collapse-1"
+								aria-expanded="false"
+								aria-controls="navbar">
+                            	<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+						</button>
+                        <a class='navbar-brand' [routerLink]="['/tiles']">NEXUS</a>
+
+                        <!-- optimized DOM for left nav -->
+
+                        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                        <ul class="sidebar-nav sidebar_menu visible-xs" id="sidebar">
+                            <li class="sidebar-brand">
+                                <a class="pull-right hidden-xs" id="menu-toggle"> <i aria-hidden="true" class="fa fa-bars " style="font-size:20px !Important;"></i> </a>
+                            </li>
+                            <li class="mobile-back-arrow text-left visible-xs ">
+                                <a class=""> <i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i> </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="Home" class="Home">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-home" class="fa fa-lg fa-home"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Home" class="home Home">Home</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="Contacts" class="Contacts">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-user" class="fa fa-lg fa-user"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Contacts" class="home Contacts">Contacts</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="Deal Desk" class="Deal Desk">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-gears" class="fa fa-lg fa-gears"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Deal Desk" class="home Deal Desk">Deal Desk</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="Home On Time" class="Home On Time">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-header" class="fa fa-lg fa-header"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Home On Time" class="home Home On Time">Home On Time</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="ODP" class="ODP">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-play-circle-o" class="fa fa-lg fa-play-circle-o"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home ODP" class="home ODP">ODP</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="Roadmap" class="Roadmap">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-map" class="fa fa-lg fa-map"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Roadmap" class="home Roadmap">Roadmap</span> </div>
+                                </a>
+                            </li>
+							 <li class="active">
+                                <a ng-reflect-class-name="Roadmap" class="Roadmap">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-comments"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home Roadmap" class="home Roadmap">Gift Orders</span> </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ng-reflect-class-name="IT Help" class="IT Help">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-laptop" class="fa fa-lg fa-laptop"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home IT Help" class="home IT Help">IT Help</span> </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /#sidebar-wrapper -->
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 inner-top-right h60 padd-0">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 padd-0 quicklinks-section">
+                            <ul class="nav navbar-nav w100">
+                                <li class="dropdown">
+                                    <a href="#" class="h60 dropdown-toggle text-center padd-t-20" data-toggle="dropdown">
+                                        <label class="padd-r-10"> <i class="fa fa-external-link-square" aria-hidden="true"></i> </label>
+                                        <span class="link-text hidden-xs hidden-sm">Quick Links <label class=""><b class="caret"></b></label></span>
+                                    </a>
+                                    <ul class="dropdown-menu w100 border-radius-none ">
+                                        <li class="disabled" disabled><a href="#">Select Website</a></li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>Appraisal</a> </li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>Concur</a> </li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>CoreFact</a> </li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>UltiPro</a> </li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>Learning Center</a> </li>
+                                        <li *ngFor="let ql of quickLinks"> <a (click)="ClickQuickLink(ql)"><i class="fa"></i>Outlook Practice Centre</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 statistic-section padd-0">
+                            <ul class="nav navbar-nav w100">
+                                <li *ngIf="ShowAgentStats" class="dropdown">
+                                    <a href="#" class="h60 dropdown-toggle text-center padd-t-20" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <label class="padd-r-10"> <i class="fa fa-bar-chart-o" aria-hidden="true"></i> </label>
+                                        <span class="link-text hidden-xs hidden-sm">
+                                        <span *ngIf="SessionUser.AgentSnapShot.TotalUnits">37 Units</span> <span class="dot"><b>.</b></span>
+                                        <span *ngIf="AgentVolumeShort">$20,456,987</span> </span>
+                                    </a>
+                                    <div id="N4-Agent-Stats" class="row dropdown-menu statistic-section-inner border-radius-none">
+                                        <div class="row togglelink-statistic">
+                                            <div class="col-sm-12 col-xs-12 static-holder">
+                                                <div class="col-sm-6 col-xs-6 left-innerlink padd-r-0 text-center">
+                                                    <a class="text-center isactive decoration-none padd-t-10" data-toggle="tab" href="#isProdState" id="prodLink">
+                                                        <label class="padd-r-10"> <i class="fa fa-bar-chart-o" aria-hidden="true"></i> </label>
+                                                        <span class="hidden-xs hidden-sm hidden-md">Production Goal</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-xs-6 right-innerlink padd-r-0">
+                                                    <a class="text-center decoration-none" id="rallyLink">
+                                                        <label class="padd-r-10"> <i class="fa fa-trophy" aria-hidden="true"></i> </label>
+                                                        <span class="hidden-xs hidden-sm hidden-md" data-toggle="tab" href="#isRally">Rally Goal</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 tab-content" >
+                                                <div *ngIf="!IsRPM" class="prod-state">
+                                                    <h4>Production Stats</h4>
+                                                </div>
+                                                <div class="tab-pane mrg-t-5 active" id="isProdState">
+                                                    <div class="table-border mrg-b-20">
+                                                        <table class="table table-responsive borderless w95">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th><b> June 2017</b></th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Goal:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>$2,123,654</b></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Funded:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>$1,235,454</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FirstHalfUnitsGraphValue" aria-valuemin="0" [style.width.%]="MonthGraphValueMax"><span class="mrg-l-10">20%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="table-border">
+                                                        <table class="table table-responsive borderless w95">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th><b>Current Year 2017</b></th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Goal:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>$6,123,258</b></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Funded:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>$2,654,879</b></td>
+                                                                </tr>
+                                                                <!--<tr class="progress-height">
+                                                            <td colspan="2">
+                                                                <div aria-valuemax="100" class="table-dull">
+                                                                    <div class="table-success clr" [attr.aria-valuenow]="FirstHalfUnitsGraphValue" aria-valuemin="0" [style.width.%]="FirstHalfUnitsGraphValueMax"><span class="mrg-l-10">{{FirstHalfVolumeGraphValue}}%</span></div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>-->
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FirstHalfUnitsGraphValue" aria-valuemin="0" [style.width.%]="YearGraphValueMax"><span class="mrg-l-10">30%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="plain-content">
+                                                        <table class="table borderless w95">
+                                                            <tbody>
+                                                                <tr class="height">
+                                                                    <td colspan="2">
+                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">Company Rank:</div>
+                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right">17</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="height">
+                                                                    <td colspan="2">
+                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ">Branch Rank:</div>
+                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right">7</div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="height">
+                                                                    <td colspan="2">
+                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">Units YTD:</div>
+                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right">57</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="static-link-action visible-sm visible-xs">
+                                                        <div class="action-block pull-right padd-b-10"> <a class="btn btn-default btn-close border-radius-none mrg-r-5">Close</a>
+                                                            <!--<a href="#" class="btn bt-default btn-save border-radius-none">Save</a>--></div>
+                                                    </div>
+                                                </div>
+                                                <div *ngIf="IsRallyStatsMode" class="tab-pane mrg-t-5" id="isRally">
+                                                    <div class="table-border mrg-b-20">
+                                                        <table class="table table-responsive borderless w95">
+                                                            <thead>
+                                                                <tr class="set-tr-h">
+                                                                    <th colspan="2" class="text-center"><b>Road to Tahoe</b>
+                                                                        <br/><i>January to June 2017 Goals</i> </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Units:</td>
+                                                                    <td align="right"><b>20/30</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FirstHalfUnitsGraphValue" aria-valuemin="0" [style.width.%]="FirstHalfUnitsGraphValueMax"><span class="mrg-l-10">20%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Volume:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>50 / 10m</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FirstHalfVolumeGraphValue" aria-valuemin="0" [style.width.%]="FirstHalfVolumeGraphValueMax"><span class="mrg-l-10">30%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="table-border mrg-b-20">
+                                                        <table class="table table-responsive borderless w95">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2" class="text-center"><b>Annual Sales Rally</b>
+                                                                        <br/> <i>July to December 2017 Goals</i> </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Units:</td>
+                                                                    <td align="right"><b>60 / 30 Units</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-nodata clr" [attr.aria-valuenow]="SecondHalfUnitsGraphValue" aria-valuemin="0" [style.width.%]="SecondHalfUnitsGraphValueMax"><span class="mrg-l-10">20%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Volume:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>5 / 10m</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-nodata clr" [attr.aria-valuenow]="SecondHalfVolumeGraphValue" aria-valuemin="0" [style.width.%]="SecondHalfVolumeGraphValueMax"><span class="mrg-l-10">20%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th colspan="2" class="text-center"><b><i>January to December 2017 Goals</i></b></th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Units:</td>
+                                                                    <td align="right"><b>8 / 60 Units</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FullYearUnitsGraphValue" aria-valuemin="0" [style.width.%]="FullYearUnitsGraphValueMax"><span class="mrg-l-10">5%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Volume:</td>
+                                                                    <td align="right"><b><i class="fa fa-dollar"></i>8 / 20m</b></td>
+                                                                </tr>
+                                                                <tr class="progress-height">
+                                                                    <td colspan="2">
+                                                                        <div aria-valuemax="100" class="table-dull">
+                                                                            <div class="table-success clr" [attr.aria-valuenow]="FullYearVolumeGraphValue" aria-valuemin="0" [style.width.%]="FullYearVolumeGraphValueMax"><span class="mrg-l-10">10%</span></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 user-section loanadvisor-section padd-0 ">
+                            <!--id="navbar-collapse-1"-->
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown" id="userdropdown">
+                                    <a href="#" class="h60 dropdown-toggle padd-t-20" data-toggle="dropdown">
+                                        <label class="padd-r-10"><i class="fa fa-user" aria-hidden="true"></i></label>
+                                        <span class="link-text hidden-xs hidden-sm">Benjamin Franklin <label class=""><b class="caret"></b></label></span>
+                                    </a>
+                                    <ul class="dropdown-menu border-radius-none w100 " id="temp-ul"c>
+                                        <li class="disabled" disabled><a>Select Loan Advisor</a></li>
+                                        <li class="">
+                                            <a (click)="OnBindToAssistant(a)">
+                                                <i class="fa fa-user mrg-r-10"></i> Brendan Deleahoke
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="disabled" disabled><a>For Yourself</a></li>
+                                        <li><a href="javascript:void(0)"><i class="fa fa-cog mrg-r-10"></i>Settings</a></li>
+                                        <li class=""> <a (click)="GoToImpersonation()"><i class="fa fa-user-secret mrg-r-10"></i>Impersonation</a> </li>
+                                        <li><a (click)="OnStopImpersonation()"><i class="fa fa-ban mrg-r-10 red"></i>Stop Impersonation</a> </li>
+                                        <li><a href="/Account/LogOff"><i class="fa fa-sign-out mrg-r-10"></i>Log Out </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--<a class="search-contact col-lg-1 col-md-2 col-sm-4 hidden-xs" id="logout">
+                                <i class="fa fa-arrow-left fa-lg" aria-hidden="true"></i>
+                            </a>-->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- desktop Menu ends here-->
+        </header>
+	<!-- HTML Content Starts From Here -->
+		<article class="container-fluid mrg-t-60">
+			<section class="row active" id="wrapper">
+				<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div id="sidebar-wrapper" class="hidden-xs">
+						<!-- optimized DOM for left nav -->
+							<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+								<ul class="sidebar-nav sidebar_menu" id="sidebar">
+									<li class="sidebar-brand">
+										<a class="pull-right hidden-xs menu-toggle" id="menu-toggle">
+												<i aria-hidden="true" class="fa fa-bars " style="font-size:20px !Important;"></i>
+											</a>
+									</li>
+									<!-- This Arrow is added here for displaying back nav - only foe mobile version -->
+									<li class="mobile-back-arrow text-left visible-xs ">
+										<a class="toggle-mobile-nav">
+											<i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i>
+										</a>
+									</li>
+									<li >
+										<a ng-reflect-class-name="Home" class="Home">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-home" class="fa fa-lg fa-home"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home Home" class="home Home">Home</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="Contacts" class="Contacts">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-user" class="fa fa-lg fa-user"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home Contacts" class="home Contacts">Contacts</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="Deal Desk" class="Deal Desk">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-gears" class="fa fa-lg fa-gears"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home Deal Desk" class="home Deal Desk">Deal Desk</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="Home On Time" class="Home On Time">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-header" class="fa fa-lg fa-header"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home Home On Time" class="home Home On Time">Home On Time</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="ODP" class="ODP">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-play-circle-o" class="fa fa-lg fa-play-circle-o"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home ODP" class="home ODP">ODP</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="Roadmap" class="Roadmap">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-map" class="fa fa-lg fa-play-circle-o"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home Roadmap" class="home Roadmap">Roadmap</span>
+											</div>
+										</a>
+									</li>
+									<li class="active">
+										<a ng-reflect-class-name="IT Help" class="IT Help">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-comments"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home IT Help" class="home IT Help">Gift Orders</span>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a ng-reflect-class-name="IT Help" class="IT Help">
+											<div class="inline-blk menu-icon-left">
+												<i ng-reflect-class-name="fa fa-lg fa-laptop" class="fa fa-lg fa-laptop"></i>
+											</div>
+											<div class="inline-blk">
+												<span ng-reflect-class-name="home IT Help" class="home IT Help">IT Help</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+							<!-- /#sidebar-wrapper -->
+					</div>
+
+					<!-- Page content -->
+					<div id="page-content-wrapper">
+						<!-- Keep all page content within the page-content inset div! -->
+						<div class="page-content inset">
+							<div class="row container-fluid">
+								<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+									<div class="body-content right">
+										<router-outlet></router-outlet>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</article>
+    </div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 10]>
+        <script src="assets/js/placeholder.js"></script>
+    <![endif]-->
+</body>
+
+</html>
