@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gift.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,8 +52,8 @@
 
                         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                         <ul class="sidebar-nav sidebar_menu visible-xs" id="sidebar">
-                            <li class="sidebar-brand">
-                                <a class="pull-right hidden-xs" id="menu-toggle"> <i aria-hidden="true" class="fa fa-bars " style="font-size:20px !Important;"></i> </a>
+                            <li class="sidebar-brand hidden-xs">
+                                <a class="pull-right " id="menu-toggle"> <i aria-hidden="true" class="fa fa-bars " style="font-size:20px !Important;"></i> </a>
                             </li>
                             <li class="mobile-back-arrow text-left visible-xs ">
                                 <a class=""> <i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i> </a>
@@ -94,9 +95,9 @@
                                 </a>
                             </li>
 							 <li class="active">
-                                <a ng-reflect-class-name="Roadmap" class="Roadmap">
-                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-comments"></i> </div>
-                                    <div class="inline-blk"> <span ng-reflect-class-name="home Roadmap" class="home Roadmap">Gift Orders</span> </div>
+                                <a ng-reflect-class-name="IT Help" class="IT Help">
+                                    <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-laptop"></i> </div>
+                                    <div class="inline-blk"> <span ng-reflect-class-name="home IT Help" class="home IT Help">Gift Orders</span> </div>
                                 </a>
                             </li>
                             <li>
@@ -402,7 +403,7 @@
 											<i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i>
 										</a>
 									</li>
-									<li >
+									<li>
 										<a ng-reflect-class-name="Home" class="Home">
 											<div class="inline-blk menu-icon-left">
 												<i ng-reflect-class-name="fa fa-lg fa-home" class="fa fa-lg fa-home"></i>
@@ -494,6 +495,25 @@
 								<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 									<div class="body-content right">
 										<router-outlet></router-outlet>
+										<div class="gift-o-holder" id="gift-o-wrapper">
+											<div class="gift-o-inner ">
+												<h2 class="title">Gift Order</h2>
+												<div class="left-row col-lg-6 col-md-6 col-xs-6">
+													<h2 class="sub-title">Gift item's</h2>
+													<div class="col-lg-3 col-md-4 col-xs-6 gift-thumb">
+
+													</div>
+												</div>
+												<div class="right-row col-lg-6 col-md-6 col-xs-6">
+													<h2 class="sub-title">Order History</h2>
+													<div class="col-lg-3 col-md-4 col-xs-6 gift-thumb">
+
+													</div>
+												</div>
+
+
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
