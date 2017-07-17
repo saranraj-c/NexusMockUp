@@ -988,6 +988,11 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     transition: all .4s ease 0s;
   }
 }
+@media (min-width: 414px) and (max-width: 736px) {
+  #userdropdown {
+    border: 1px solid blue;
+  }
+}
 @media only screen (min-width: 768px) and (max-width: 991px) {
   #userdropdown {
     border: 1px solid #ccc;
