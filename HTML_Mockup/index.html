@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/giftorder.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,7 +57,7 @@
                             <li class="mobile-back-arrow text-left visible-xs ">
                                 <a class=""> <i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i> </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a ng-reflect-class-name="Home" class="Home">
                                     <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-home" class="fa fa-lg fa-home"></i> </div>
                                     <div class="inline-blk"> <span ng-reflect-class-name="home Home" class="home Home">Home</span> </div>
@@ -94,7 +93,7 @@
                                     <div class="inline-blk"> <span ng-reflect-class-name="home Roadmap" class="home Roadmap">Roadmap</span> </div>
                                 </a>
                             </li>
-							 <li class="active">
+							 <li>
                                 <a ng-reflect-class-name="IT Help" class="IT Help">
                                     <div class="inline-blk menu-icon-left"> <i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-laptop"></i> </div>
                                     <div class="inline-blk"> <span ng-reflect-class-name="home IT Help" class="home IT Help">Gift Orders</span> </div>
@@ -403,7 +402,7 @@
 											<i aria-hidden="true" class="fa fa-arrow-left fa-lg"></i>
 										</a>
 									</li>
-									<li>
+									<li class="active">
 										<a ng-reflect-class-name="Home" class="Home">
 											<div class="inline-blk menu-icon-left">
 												<i ng-reflect-class-name="fa fa-lg fa-home" class="fa fa-lg fa-home"></i>
@@ -463,7 +462,7 @@
 											</div>
 										</a>
 									</li>
-									<li class="active">
+									<li>
 										<a ng-reflect-class-name="IT Help" class="IT Help">
 											<div class="inline-blk menu-icon-left">
 												<i ng-reflect-class-name="fa fa-lg fa-comments" class="fa fa-lg fa-comments"></i>
@@ -495,118 +494,98 @@
 								<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
 									<div class="body-content right">
 										<router-outlet></router-outlet>
-										<div class="gift-o-holder" id="gift-o-wrapper">
-											<div class="gift-o-inner ">
-												<h2 class="title">Gift Order</h2>
-												<div class="left-row col-lg-6 col-md-6 col-sm-12 col-xs-12">
-													<h2 class="sub-title">Gift item's</h2>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/5.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
+										<tiles>
+											<div class="row NexusTiles">
+												<div>
+												</div>
+
+											<div>
+												<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+													<div class="Tile">
+														<div class="visual">
+															<i ng-reflect-class-name="fa fa-user" class="fa fa-user"></i>
 														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/2.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/2.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/9.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/7.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/8.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/4.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
-															</div>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
-														<div class="gift-holder">
-															<figure class="figure">
-																<img src="/assets/img/8.jpg" class="figure-img img-fluid rounded" alt="Gift one">
-																<figcaption class="figure-caption">Copper Mug Set</figcaption>
-																<h3>Set of Four</h3>
-															</figure>
-															<div class="button-action">
-																<a class="btn btn-primary select" href="#" > Select </a>
+														<div class="details">
+															<div class="desc">
+																Contacts
 															</div>
 														</div>
 													</div>
 												</div>
-												<div class="right-row col-lg-6 col-md-6 col-xs-6">
-													<h2 class="sub-title">Order History</h2>
-													<div class="col-lg-3 col-md-4 col-xs-6 gift-thumb">
-
+											</div>
+												<div>
+													<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+														<div class="Tile">
+															<div class="visual">
+																<i ng-reflect-class-name="fa fa-gears" class="fa fa-gears"></i>
+															</div>
+															<div class="details">
+																<div class="desc">
+																	Deal Desk
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
-
+												<div>
+													<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+														<div class="Tile">
+															<div class="visual">
+																<i ng-reflect-class-name="fa fa-header" class="fa fa-header"></i>
+															</div>
+															<div class="details">
+																<div class="desc">
+																	Home On Time
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											<div>
+												<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+													<div class="Tile">
+														<div class="visual">
+															<i ng-reflect-class-name="fa fa-play-circle-o" class="fa fa-play-circle-o"></i>
+														</div>
+														<div class="details">
+															<div class="desc">
+																ODP
+															</div>
+														</div>
+													</div>
+												</div>
 
 											</div>
-										</div>
+											<div>
+												<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+														<div class="Tile">
+															<div class="visual">
+																<i ng-reflect-class-name="fa fa-map" class="fa fa-map"></i>
+															</div>
+															<div class="details">
+																<div class="desc">
+																	Roadmap
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+														<div class="Tile">
+															<div class="visual">
+																<i ng-reflect-class-name="fa fa-laptop" class="fa fa-laptop"></i>
+															</div>
+															<div class="details">
+																<div class="desc">
+																	IT Help
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</tiles>
 									</div>
 								</div>
 							</div>
