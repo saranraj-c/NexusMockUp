@@ -89,7 +89,6 @@ a.show-gift-details:hover {
   background: #f9f9f9;
 }
 .dsc {
-  position: absolute;
   padding-left: 10px;
   margin-top: -5px;
 }
@@ -172,6 +171,9 @@ a.show-gift-details:hover {
 }
 .gift-o-holder .right-row .view-docs table.table thead tr {
   cursor: pointer;
+}
+.gift-o-holder .right-row .view-docs table.table tr:nth-child(2n+2) {
+  background-color: red;
 }
 .gift-o-holder .right-row .view-docs table.table tr:not(:nth-of-type(even)) {
   background: #fff;
