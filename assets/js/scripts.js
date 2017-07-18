@@ -52,9 +52,9 @@ jQuery(document).ready(function() {
 	});
 	
 	$('th.close-gift-o-details').on('click', function(e){
-		$(this).closest('table').parent().hide('300');
-		$(this).find('span.acs').show('300');
-		$(this).find('span.dsc').hide('300');
+		var parentTable = $(this).closest('table').parent().parent().hide('300');
+		$(parentTable).prev().find('span.acs').hide('300');
+		$(parentTable).prev().find('span.dsc').show('300');
 	});
 
 });
