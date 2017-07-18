@@ -40,6 +40,21 @@ jQuery(document).ready(function() {
     });
 	setTimeout( function () {
 		$('.mobile-back-arrow').trigger('click');
-	}, 1)
+	}, 1);
+	
+	//Toggle Gift Details in Gift order summary
+	$('.show-gift-details').on('click', function(e){
+		$(this).toggleClass('open');
+		var toToggle = $(this).closest('tr').next();
+			$(toToggle).show('300');
+			$(this).find('span.acs').show('300');
+			$(this).find('span.dsc').hide('300');
+	});
+	
+	$('th.close-gift-o-details').on('click', function(e){
+		$(this).closest('table').parent().hide('300');
+		$(this).find('span.acs').show('300');
+		$(this).find('span.dsc').hide('300');
+	});
 
 });

@@ -15,6 +15,7 @@ body {
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
+  background-color: #fff;
 }
 .mg-image img {
   -webkit-transition: all 1s ease;
@@ -78,6 +79,27 @@ body {
   color: #fff;
   font-weight: bold;
 }
+a.show-gift-details {
+  font-weight: bold;
+}
+a.show-gift-details:hover {
+  text-decoration: none;
+}
+#page-content-wrapper {
+  background: #f9f9f9;
+}
+.dsc {
+  position: absolute;
+  padding-left: 10px;
+  margin-top: -5px;
+}
+.acs {
+  display: none;
+  padding-left: 10px;
+}
+.gift-details {
+  display: none;
+}
 .gift-o-holder .title-holder {
   padding-left: 0;
 }
@@ -109,6 +131,7 @@ body {
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
+  background-color: #fff;
 }
 .gift-o-holder .left-row .gift-thumb figure {
   margin: 0;
@@ -138,6 +161,39 @@ body {
 }
 .gift-o-holder .gift-holder .button-action {
   padding-top: 5px;
+}
+.gift-o-holder .right-row {
+  padding: 20px;
+  margin-top: 10px;
+}
+.gift-o-holder .right-row .gift-o-summary {
+  background: #fff;
+  padding: 10px;
+}
+.gift-o-holder .right-row .view-docs table.table thead tr {
+  cursor: pointer;
+}
+.gift-o-holder .right-row .view-docs table.table tr:not(:nth-of-type(even)) {
+  background: #fff;
+}
+.gift-o-holder .right-row .view-docs table.table .show-gift-details {
+  position: relative;
+}
+.gift-o-holder .right-row .view-docs table.table .gift-detail-table .close-gift-o-details {
+  color: #ccc;
+  cursor: pointer;
+}
+.gift-o-holder .right-row .view-docs table.table .gift-detail-table tr {
+  background: #f9f9f9;
+}
+.gift-o-holder .right-row .gift-details .table {
+  background: #f9f9f9;
+}
+.gift-o-holder .right-row .gift-details td {
+  background: #f9f9f9;
+}
+.gift-o-holder .right-row .table-striped tbody > tr:nth-of-type(odd + 2) {
+  background: #fff;
 }
 @media (min-width: 320px) and (max-width: 568px) {
   .gift-o-holder .left-row .gift-thumb {

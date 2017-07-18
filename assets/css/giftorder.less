@@ -11,6 +11,7 @@ body{
 		padding: 10px;
 		margin: 10px;
     	border: 1px solid #ccc;
+		background-color: #fff;
 	}
 }
 
@@ -75,6 +76,26 @@ body{
 		color: #fff;
 		font-weight: bold;
 }
+a.show-gift-details{
+	font-weight: bold;
+	&:hover{
+		text-decoration: none;
+	}
+	
+}
+#page-content-wrapper{
+	background: #f9f9f9;
+}
+.dsc{
+	position: absolute;
+	padding-left: 10px;
+	margin-top: -5px;
+}
+.acs{
+	display: none;
+	padding-left: 10px;
+}
+.gift-details{ display: none; }
 .gift-o-holder{
 	.title-holder{ 
 		padding-left: 0;
@@ -134,6 +155,52 @@ body{
 	.gift-holder{
 		.button-action{
 			padding-top: 5px;
+		}
+	}
+	.right-row{
+		padding: 20px;
+    	margin-top: 10px;
+		.gift-o-summary{
+			background: #fff;
+			padding: 10px;
+		}
+		.view-docs{
+			table.table{				
+				thead{
+					tr{
+						cursor: pointer;
+					}
+				}
+				tr:not(:nth-of-type(even)){
+					background: #fff;
+				}				
+				.show-gift-details{
+					position: relative;					
+					
+				}
+				.gift-detail-table{
+					.close-gift-o-details{
+						color: #ccc;
+						cursor: pointer;
+					}
+					tr{
+						background: #f9f9f9;
+					}
+				}
+			}
+		}
+		.gift-details{
+			.table{
+				background: #f9f9f9;
+			}
+			td{
+				background: #f9f9f9;
+			}
+		}
+		.table-striped{ 
+			tbody > tr:nth-of-type(odd + 2) {
+				background: #fff;
+			}
 		}
 	}
 }
