@@ -56,5 +56,39 @@ jQuery(document).ready(function() {
 		$(parentTable).prev().find('span.acs').hide('300');
 		$(parentTable).prev().find('span.dsc').show('300');
 	});
+	//Gift order toggleing in mobile	
+	$('.sub-title').on('click', function(e){
+		var self = this;
+		var CurrentlyClicked = $(this).data('source-event').toLowerCase(); 
+		var summaryList = this.dataset.summaryToshow; //$(this).data('summary-toShow');		
+		var giftList = this.dataset.sourceEvent;		
+		if(CurrentlyClicked == 'gift'){
+			$("#gitf_items").show('300');
+			$("#gitf_ord_summary").hide('300');	
+			$('.sub-title.active').removeClass('active');
+			$(this).addClass('active');
+		} else {		
+			$("#gitf_ord_summary").show('300');
+			$("#gitf_items").hide('300');
+			$('.sub-title.active').removeClass('active');
+			$(this).addClass('active');
+		}	
+	});
+	
+	
+	//Toggle Gift Details in Table - Responsive
+	$('span.angle-down').on('click', function(e){
+//		$(this).addClass('expanded');
+		$(this).hide();		
+		$('#gift-o-detail').show('300');
+		$('span.angle-up').show();
+	});
+	
+	$('span.angle-up, .close-gift-detail').on('click', function(e){					
+		$('#gift-o-detail').hide('300');
+		$('span.angle-up').hide();
+		$('span.angle-down').show();
+	});
+	
 
 });

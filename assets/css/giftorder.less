@@ -53,13 +53,28 @@ body{
     color: #fff;
 }
 
-.modal{
+
+#ShowMyModal{
 	.modal-content{
 		border-radius: 0;
+		.close{
+			font-size: 25px;
+		}
 	}
 	.modal-dialog{
 		top: 22.22%;
-		width: 700px;
+		width: 810px;
+	}
+	.modal-body{
+		figure{
+			img{
+				width: 340px;
+    			height: 175px;
+			}	
+		}
+		.gift-description{
+			padding-left: 0;
+		}
 	}
 }
 .btn-gift-default{
@@ -171,11 +186,14 @@ a.show-gift-details{
 						cursor: pointer;
 					}
 				}
-				tr:nth-child(2n+2) {
-						background-color: red;
+				tr:nth-child(3n+1) {
+//					background-color: yellow;
+				}
+				tr:nth-child(3n+0) {
+//						background-color: red;
 					}
 				tr:not(:nth-of-type(even)){
-					background: #fff;
+//					background: #fff;
 				}				
 				.show-gift-details{
 					position: relative;					
@@ -211,7 +229,18 @@ a.show-gift-details{
 //Very Smallest device breakpoint
 @media ( min-width: 320px ) and ( max-width : 568px ) {
 	.gift-o-holder{
+		#gift-title{
+			padding-left: 15px;
+		}
+		#history-title{
+			text-align: center;
+		}
+		h3.active{
+			color: #337ab7;
+    		text-decoration: underline;
+		}
 		.left-row{
+			padding: 0;			
 			.gift-thumb{
 				padding: 20px 0 15px 0;
 				.gift-holder{
@@ -232,5 +261,69 @@ a.show-gift-details{
 				}
 			}
 		}
+		.right-row{
+			padding: 20px 0;
+			.gift-o-summary{
+				tr.row{
+					width: 100%;
+				}
+				tr td{
+					div.col-sm-4{
+						width: 22.222%;
+					}
+				}
+				.top-left-tr-data,
+				.top-right-tr-data,
+				.btm-left-tr-data,
+				.btm-right-tr-data {
+					display: inline-table;
+				}
+				.data-head{
+					font-weight: bold;
+					padding-top: 5px;
+				}
+				.data-value{
+					padding-top: 5px;
+					color: #b1b1b1;
+				}
+				.summary-responsive{
+					padding-bottom: 20px;
+					padding-top: 20px;
+					margin-left: 30px;
+					padding-right: 0;
+					/* padding-left: 0; */
+					text-align: center;
+				}
+				
+				span.angle-down,
+				span.angle-up{
+					cursor: pointer;
+					display: none;
+				}
+				span.angle-down{
+					display: block;
+				}
+				#gift-o-summ{
+					background: #fff;
+					margin-bottom: 10px;
+				}
+				#gift-o-detail{
+					display: none;
+				}
+				table tr{
+//					display: block;
+				}
+				table tr td, 
+				table tr th{
+					border-width: 0;
+				}
+			}
+		}
+	}
+	#ShowMyModal{
+		.modal-dialog{
+			width: auto;
+			top: 10%;
+		}	
 	}
 }
