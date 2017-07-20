@@ -272,12 +272,26 @@ a.show-gift-details{
 
 //Very Smallest device breakpoint
 @media ( min-width: 320px ) and ( max-width : 568px ) {
+	tr.setwhite,
+	tr.gift-details,
+	tr.setbg{
+		display: none;
+	}
+
+
 	.gift-o-holder{
 		.title{
 			font-weight: 700;
+			margin-left: 0;
 		}
 		#gift-title{
-			padding-left: 15px;
+			padding-left: 0;
+			h3{
+				margin-left: 0;
+			}
+		}
+		.gift-title-container{
+			margin-left: 0;
 		}
 		#history-title{
 			text-align: center;
@@ -328,15 +342,17 @@ a.show-gift-details{
 				.data-head{
 					font-weight: bold;
 					padding-top: 5px;
+					text-align: left;
 				}
 				.data-value{
 					padding-top: 5px;
 					color: #b1b1b1;
+					text-align: left;
 				}
 				.summary-responsive{
 					padding-bottom: 20px;
 					padding-top: 20px;
-					margin-left: 30px;
+					margin-left: 15px;
 					padding-right: 0;
 					/* padding-left: 0; */
 					text-align: center;
@@ -351,7 +367,7 @@ a.show-gift-details{
 					display: block;
 				}
 				#gift-o-summ{
-					background: #fff;
+					background-color: #f9f9f9;
 					margin-bottom: 10px;
 				}
 				#gift-o-detail{
@@ -370,7 +386,18 @@ a.show-gift-details{
 	#ShowMyModal{
 		.modal-dialog{
 			width: auto;
-			top: 10%;
-		}	
+			top: 5%;
+		}
+		.modal-body{
+			margin:10px;
+			figure{
+				img{
+					width: 310px;
+				}
+			}
+			.gift-description{
+				padding-left: 25px;
+			}
+		}
 	}
 }

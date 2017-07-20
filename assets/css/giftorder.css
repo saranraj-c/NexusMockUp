@@ -238,11 +238,23 @@ a.show-gift-details:hover {
   background: #fff;
 }
 @media (min-width: 320px) and (max-width: 568px) {
+  tr.setwhite,
+  tr.gift-details,
+  tr.setbg {
+    display: none;
+  }
   .gift-o-holder .title {
     font-weight: 700;
+    margin-left: 0;
   }
   .gift-o-holder #gift-title {
-    padding-left: 15px;
+    padding-left: 0;
+  }
+  .gift-o-holder #gift-title h3 {
+    margin-left: 0;
+  }
+  .gift-o-holder .gift-title-container {
+    margin-left: 0;
   }
   .gift-o-holder #history-title {
     text-align: center;
@@ -284,15 +296,17 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary .data-head {
     font-weight: bold;
     padding-top: 5px;
+    text-align: left;
   }
   .gift-o-holder .right-row .gift-o-summary .data-value {
     padding-top: 5px;
     color: #b1b1b1;
+    text-align: left;
   }
   .gift-o-holder .right-row .gift-o-summary .summary-responsive {
     padding-bottom: 20px;
     padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 15px;
     padding-right: 0;
     /* padding-left: 0; */
     text-align: center;
@@ -306,7 +320,7 @@ a.show-gift-details:hover {
     display: block;
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-summ {
-    background: #fff;
+    background-color: #f9f9f9;
     margin-bottom: 10px;
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-detail {
@@ -318,6 +332,15 @@ a.show-gift-details:hover {
   }
   #ShowMyModal .modal-dialog {
     width: auto;
-    top: 10%;
+    top: 5%;
+  }
+  #ShowMyModal .modal-body {
+    margin: 10px;
+  }
+  #ShowMyModal .modal-body figure img {
+    width: 310px;
+  }
+  #ShowMyModal .modal-body .gift-description {
+    padding-left: 25px;
   }
 }
