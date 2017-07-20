@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 .gift-thumb-global {
-  padding: 25px;
+  padding-bottom: 20px;
   opacity: 1;
   transition: all .2s linear;
 }
@@ -66,6 +66,9 @@ body {
 #ShowMyModal .modal-content .close {
   font-size: 25px;
 }
+#ShowMyModal .modal-content .modal-title {
+  font-weight: bold;
+}
 #ShowMyModal .modal-dialog {
   top: 22.22%;
   width: 810px;
@@ -76,6 +79,7 @@ body {
 }
 #ShowMyModal .modal-body .gift-description {
   padding-left: 0;
+  margin-top: 10px;
 }
 .btn-gift-default:hover {
   background-color: #2e6da4;
@@ -109,15 +113,28 @@ a.show-gift-details:hover {
 .gift-details {
   display: none;
 }
+.gift-o-holder .title {
+  font-weight: 700;
+  margin-left: 40px;
+}
+.gift-o-holder .gift-title-container {
+  margin-left: 25px;
+}
 .gift-o-holder .title-holder {
   padding-left: 0;
+}
+.gift-o-holder #gift-title h3 {
+  margin-left: 15px;
+}
+.gift-o-holder .sub-title {
+  color: #b9b9b9;
 }
 .gift-o-holder .left-row {
   max-height: 100vh;
   overflow-y: scroll;
 }
 .gift-o-holder .left-row .gift-thumb {
-  padding: 25px;
+  padding-bottom: 20px;
   opacity: 1;
   transition: all .2s linear;
 }
@@ -155,7 +172,7 @@ a.show-gift-details:hover {
 .gift-o-holder .left-row .gift-thumb figure img {
   transition: all 1s ease;
   width: 100%;
-  height: 260px;
+  height: 220px;
 }
 .gift-o-holder .left-row .gift-thumb figure img:hover {
   transform: scale(1.25);
@@ -182,8 +199,27 @@ a.show-gift-details:hover {
 .gift-o-holder .right-row .view-docs table.table thead tr {
   cursor: pointer;
 }
+.gift-o-holder .right-row .view-docs table.table tr.setwhite {
+  background-color: #fff;
+}
+.gift-o-holder .right-row .view-docs table.table tr.setbg {
+  background-color: #f4f4f4;
+}
+.gift-o-holder .right-row .view-docs table.table tr td {
+  border-width: 0;
+}
 .gift-o-holder .right-row .view-docs table.table .show-gift-details {
   position: relative;
+}
+.gift-o-holder .right-row .view-docs table.table tr.gift-details {
+  border-bottom-width: 0;
+}
+.gift-o-holder .right-row .view-docs table.table tr.gift-details td {
+  border-width: 0;
+  border-bottom-width: 0;
+}
+.gift-o-holder .right-row .view-docs table.table tr.gift-details td table {
+  border-width: 0;
 }
 .gift-o-holder .right-row .view-docs table.table .gift-detail-table .close-gift-o-details {
   color: #ccc;
@@ -202,6 +238,9 @@ a.show-gift-details:hover {
   background: #fff;
 }
 @media (min-width: 320px) and (max-width: 568px) {
+  .gift-o-holder .title {
+    font-weight: 700;
+  }
   .gift-o-holder #gift-title {
     padding-left: 15px;
   }
