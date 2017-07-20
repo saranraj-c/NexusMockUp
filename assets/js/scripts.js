@@ -36,12 +36,14 @@ jQuery(document).ready(function() {
 	 $('#icon-bar-responsive').on('click', function(){
         $("#icon-bar-responsive, nav.header-responsive").addClass('responsive-toggle');
         $("#sidebar").animate({ "left": "0", "width":"320" }).css("display","block");
-        $("#overlay").show();
+        //$("#overlay").show();
     });
 	setTimeout( function () {
 		$('.mobile-back-arrow').trigger('click');
 	}, 1);
 	
+
+
 	//Toggle Gift Details in Gift order summary
 	$('.show-gift-details').on('click', function(e){
 		$(this).toggleClass('open');
@@ -78,16 +80,15 @@ jQuery(document).ready(function() {
 	
 	//Toggle Gift Details in Table - Responsive
 	$('span.angle-down').on('click', function(e){
-//		$(this).addClass('expanded');
 		$(this).hide();
-		var dom = document.getElementById("gift-o-detail");
-		$('#gift-o-detail').show('300');
-		dom.scrollIntoView();
-		$('span.angle-up').show();
+		$('.gift-o-detail').hide();
+		$(this).next().show();
+		$(this).parent().next().show('300');
+
 	});
 	
 	$('span.angle-up, .close-gift-detail').on('click', function(e){					
-		$('#gift-o-detail').hide('300');
+		$('.gift-o-detail').hide('300');
 		$('span.angle-up').hide();
 		$('span.angle-down').show('300');
 	});

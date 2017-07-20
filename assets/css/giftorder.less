@@ -267,11 +267,18 @@ a.show-gift-details{
 				background: #fff;
 			}
 		}
+		.pagination-holder{
+			float: right;
+
+		}
 	}
 }
 
 //Very Smallest device breakpoint
 @media ( min-width: 320px ) and ( max-width : 568px ) {
+	#inner-container{
+		background: #f9f9f9;
+	}
 	tr.setwhite,
 	tr.gift-details,
 	tr.setbg{
@@ -391,6 +398,13 @@ a.show-gift-details{
 				tr.visible-xs{
 					border-top-width: 0;
 					margin-bottom: 20px;
+					border: 0px solid red;
+					box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+					td{
+						margin-top: .5em;
+    					margin-bottom: .5em;
+					}
+
 				}
 
 				//responsive gift order detail
@@ -409,12 +423,25 @@ a.show-gift-details{
 				}
 
 				.table-responsive{
+					  	border-collapse: collapse;
 						overflow: hidden; //important, to see if it fixes the window. content might get hide some times
 					}
 
 			}
+			.pagination-holder{
+					float: none;
+					text-align: center;
+				a.show-more{
+					border: 1px solid #2e6da4;
+					width: 100%;
+					border-radius: 0;
+					padding: 10px;
+					font-size: 18px;
+				}
+			}
 		}
 	}
+
 	#ShowMyModal{
 		.modal-dialog{
 			width: auto;

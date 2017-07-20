@@ -237,7 +237,13 @@ a.show-gift-details:hover {
 .gift-o-holder .right-row .table-striped tbody > tr:nth-of-type(odd + 2) {
   background: #fff;
 }
+.gift-o-holder .right-row .pagination-holder {
+  float: right;
+}
 @media (min-width: 320px) and (max-width: 568px) {
+  #inner-container {
+    background: #f9f9f9;
+  }
   tr.setwhite,
   tr.gift-details,
   tr.setbg {
@@ -287,10 +293,6 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary tr.row {
     width: 100%;
   }
-  .gift-o-holder .right-row .gift-o-summary tr td {
-    margin-top: 0;
-    padding: 0;
-  }
   .gift-o-holder .right-row .gift-o-summary tr td div.col-sm-4 {
     width: 22.222%;
   }
@@ -331,7 +333,7 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-summ {
     background-color: #f9f9f9;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-detail {
     display: none;
@@ -345,6 +347,13 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
     border-top-width: 0;
+    margin-bottom: 20px;
+    border: 0px solid red;
+    box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs td {
+    margin-top: .5em;
+    margin-bottom: .5em;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
     background-color: #e6e6e6;
@@ -360,7 +369,19 @@ a.show-gift-details:hover {
     left: -20px;
   }
   .gift-o-holder .right-row .gift-o-summary .table-responsive {
+    border-collapse: collapse;
     overflow: hidden;
+  }
+  .gift-o-holder .right-row .pagination-holder {
+    float: none;
+    text-align: center;
+  }
+  .gift-o-holder .right-row .pagination-holder a.show-more {
+    border: 1px solid #2e6da4;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 18px;
   }
   #ShowMyModal .modal-dialog {
     width: auto;
