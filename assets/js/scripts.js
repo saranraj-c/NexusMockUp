@@ -79,15 +79,17 @@ jQuery(document).ready(function() {
 	//Toggle Gift Details in Table - Responsive
 	$('span.angle-down').on('click', function(e){
 //		$(this).addClass('expanded');
-		$(this).hide();		
+		$(this).hide();
+		var dom = document.getElementById("gift-o-detail");
 		$('#gift-o-detail').show('300');
+		dom.scrollIntoView();
 		$('span.angle-up').show();
 	});
 	
 	$('span.angle-up, .close-gift-detail').on('click', function(e){					
 		$('#gift-o-detail').hide('300');
 		$('span.angle-up').hide();
-		$('span.angle-down').show();
+		$('span.angle-down').show('300');
 	});
 	
 
