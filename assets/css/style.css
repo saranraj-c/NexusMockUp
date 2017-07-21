@@ -680,6 +680,7 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
+  width: 16px;
 }
 @media (max-width: 374px) {
   .container-fluid {
@@ -781,6 +782,12 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .header-logo {
+    height: 59px;
+  }
+  .h60 {
+    height: 59px;
+  }
   .sidebar-nav {
     top: 0px;
   }
@@ -867,6 +874,9 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .inner-top-left .navbar-toggle {
+    padding: 4px 10px !important;
+  }
   .sidebar-nav li.mobile-back-arrow:hover {
     background: none;
   }
@@ -926,6 +936,24 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
   #wrapper.active #page-content-wrapper .page-content {
     margin-left: 00;
     transition: all .4s ease 0s;
+  }
+  .header-logo {
+    height: 59px;
+  }
+  .header-logo a.navbar-brand {
+    width: 85px;
+    height: 16px;
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: 4.4px;
+    text-align: left;
+    border: 1px solid red;
+    padding: 0;
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  .h60 {
+    height: 59px;
   }
 }
 @media (min-width: 414px) and (max-width: 736px) {
