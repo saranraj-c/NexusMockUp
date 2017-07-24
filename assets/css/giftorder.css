@@ -46,6 +46,11 @@ body {
   height: 400px;
   overflow: hidden;
 }
+.mobile-history-title {
+  color: #464646;
+  height: 42px;
+  line-height: 1.35;
+}
 .current-gift-item {
   position: absolute;
   font-size: 20px;
@@ -109,6 +114,15 @@ a.show-gift-details:hover {
 .acs {
   display: none;
   padding-left: 10px;
+}
+.txt-wrap {
+  overflow: inherit;
+  text-overflow: inherit;
+  white-space: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
 }
 .gift-details {
   display: none;
@@ -332,7 +346,7 @@ a.show-gift-details:hover {
     display: block;
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-summ {
-    background-color: #f9f9f9;
+    background-color: #fff;
     margin-bottom: 20px;
   }
   .gift-o-holder .right-row .gift-o-summary #gift-o-detail {
@@ -348,19 +362,42 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
     border-top-width: 0;
     margin-bottom: 20px;
-    border: 0px solid red;
-    box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+    background-color: #fff;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs > td {
+    box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
+    border: solid 1px #c8c8c8;
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs td {
     margin-top: .5em;
     margin-bottom: .5em;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
-    background-color: #e6e6e6;
+    background-color: #f9f9f9;
     padding: 20px;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
     margin-bottom: 25px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-value {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    color: #47515c;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
+    font-size: 24px;
+    line-height: 1.54;
+    text-align: left;
+    color: #4f5a67;
+    overflow: inherit;
+    text-overflow: inherit;
+    white-space: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
@@ -382,6 +419,228 @@ a.show-gift-details:hover {
     border-radius: 0;
     padding: 10px;
     font-size: 18px;
+  }
+  #ShowMyModal .modal-dialog {
+    width: auto;
+    top: 5%;
+  }
+  #ShowMyModal .modal-body {
+    margin: 10px;
+  }
+  #ShowMyModal .modal-body figure img {
+    width: 310px;
+  }
+  #ShowMyModal .modal-body .gift-description {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  .navbar-brand {
+    border: 1px solid yellow;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
+    margin-bottom: 2em;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail #gift-o-detail {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .col-xs-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
+    font-size: 18.5px !important;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.address {
+    line-height: 0.999 !important;
+  }
+}
+@media (min-width: 375px) and (max-width: 667px) {
+  #inner-container {
+    background: #f9f9f9;
+  }
+  tr.setwhite,
+  tr.gift-details,
+  tr.setbg {
+    display: none;
+  }
+  .gift-o-holder .title {
+    font-weight: 700;
+    margin-left: 0;
+  }
+  .gift-o-holder #gift-title {
+    padding-left: 0;
+  }
+  .gift-o-holder #gift-title h3 {
+    margin-left: 0;
+  }
+  .gift-o-holder .gift-title-container {
+    margin-left: 0;
+  }
+  .gift-o-holder #history-title {
+    text-align: center;
+  }
+  .gift-o-holder h3.active {
+    color: #337ab7;
+    text-decoration: underline;
+  }
+  .gift-o-holder .left-row {
+    padding: 0;
+  }
+  .gift-o-holder .left-row .gift-thumb {
+    padding: 20px 0 15px 0;
+  }
+  .gift-o-holder .left-row .gift-thumb .gift-holder {
+    margin: 0;
+  }
+  .gift-o-holder .left-row .gift-thumb figure {
+    margin: 0;
+  }
+  .gift-o-holder .left-row .gift-thumb figure img {
+    height: 250px;
+  }
+  .gift-o-holder .right-row {
+    padding: 20px 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary {
+    padding: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.row {
+    width: 100%;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr td div.col-sm-4 {
+    width: 22.222%;
+  }
+  .gift-o-holder .right-row .gift-o-summary .top-left-tr-data,
+  .gift-o-holder .right-row .gift-o-summary .top-right-tr-data,
+  .gift-o-holder .right-row .gift-o-summary .btm-left-tr-data,
+  .gift-o-holder .right-row .gift-o-summary .btm-right-tr-data {
+    display: inline-table;
+  }
+  .gift-o-holder .right-row .gift-o-summary .data-head {
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: left;
+  }
+  .gift-o-holder .right-row .gift-o-summary .data-value {
+    padding-top: 5px;
+    color: #b1b1b1;
+    text-align: left;
+  }
+  .gift-o-holder .right-row .gift-o-summary .summary-responsive {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-right: 0;
+    /* padding-left: 0; */
+    text-align: center;
+  }
+  .gift-o-holder .right-row .gift-o-summary span.angle-down,
+  .gift-o-holder .right-row .gift-o-summary span.angle-up {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    left: -30px;
+    top: 20px;
+  }
+  .gift-o-holder .right-row .gift-o-summary span.angle-down {
+    display: block;
+  }
+  .gift-o-holder .right-row .gift-o-summary #gift-o-summ {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .gift-o-holder .right-row .gift-o-summary #gift-o-detail {
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gift-o-holder .right-row .gift-o-summary table tr td {
+    word-wrap: break-word;
+  }
+  .gift-o-holder .right-row .gift-o-summary table tr td,
+  .gift-o-holder .right-row .gift-o-summary table tr th {
+    border-width: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
+    border-top-width: 0;
+    margin-bottom: 20px;
+    margin-bottom: 5em;
+    background-color: #fff;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs > td {
+    box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
+    border: solid 1px #c8c8c8;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs td {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
+    margin-bottom: 25px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail #gift-detail-col {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-value {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    color: #47515c;
+    overflow: inherit;
+    text-overflow: inherit;
+    white-space: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
+    font-size: 20px;
+    line-height: 1.54;
+    text-align: left;
+    color: #4f5a67;
+    overflow: inherit;
+    text-overflow: inherit;
+    white-space: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+  }
+  .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
+    position: relative;
+    top: 27px;
+    z-index: 9999;
+    left: -15px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .close-gift-detail i.fa-lg {
+    width: 13px;
+    height: 13px;
+    color: #ccc;
+    font-size: small;
+  }
+  .gift-o-holder .right-row .gift-o-summary .table-responsive {
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+  .gift-o-holder .right-row .pagination-holder {
+    float: none;
+    text-align: center;
+  }
+  .gift-o-holder .right-row .pagination-holder a.show-more {
+    border: 1px solid #578ebe;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 28px;
   }
   #ShowMyModal .modal-dialog {
     width: auto;
