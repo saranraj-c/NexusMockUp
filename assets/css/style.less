@@ -170,6 +170,8 @@ table.borderless {
 	letter-spacing: 4.4px;
 	text-align: left;
 	color: #fff;
+	top: 3px;
+	position: relative;
 }
 .header-logo {
     color: #fff;
@@ -975,6 +977,8 @@ ul.sidebar-nav {
 			padding: 0;
 			margin-top: 17px;
 			padding-left: 0px;
+			position: relative;
+			top: 00;
 		}
 	}
 	.h60{
@@ -1209,7 +1213,7 @@ ul.sidebar-nav {
 
 	//**
 	.header-logo{
-		height: 59px;
+		height: 60px;
 			a.navbar-brand{
 				  	width: 85px;
 					height: 16px;
@@ -1234,7 +1238,13 @@ ul.sidebar-nav {
     		margin-bottom: 0;
 		}
 	}
-		.quicklinks-section {
+	.sidebar-nav{
+		top: 00;
+		li.mobile-back-arrow{
+			&:hover{ background: none;}
+		}
+	}
+	.quicklinks-section {
 		.navbar-nav{
 			.dropdown{
 				.dropdown-menu{
@@ -1249,19 +1259,16 @@ ul.sidebar-nav {
 			.dropdown-menu{
 				.statistic-dd;
 					.dropdown-bg-responsive;
-					width: 295px;
 					position: relative;
-					left: -155px;
 			}
 		}
 	}
-	 .loanadvisor-section {
+	.loanadvisor-section {
 		 .navbar-nav{
 			 .dropdown-menu{
 				.advisor-dd;
 				.dropdown-bg-responsive;
-				position: relative;
-				left: -120px;
+				 position: relative;
 				 height: auto;
 			}
 		 }
@@ -1274,6 +1281,10 @@ ul.sidebar-nav {
 			}
 		}
 	}
+	#wrapper{
+		padding-left: 00;
+	}
+
 	#sidebar {
 		background: #5c6470;
 		position: fixed;
@@ -1292,6 +1303,38 @@ ul.sidebar-nav {
 	}
 }
 
+@media (min-width: 414px) and (max-width : 736px) and ( orientation : landscape ){
+	.quicklinks-section {
+		.navbar-nav{
+			.dropdown{
+				.dropdown-menu{
+					.quicklinks-dd;
+					.dropdown-bg-responsive;
+				}
+			}
+		}
+	}
+	.statistic-section {
+		.navbar-nav{
+			.dropdown-menu{
+				.statistic-dd;
+					.dropdown-bg-responsive;
+					position: relative;
+					left: -155px
+			}
+		}
+	}
+	.loanadvisor-section {
+		 .navbar-nav{
+			 .dropdown-menu{
+				.advisor-dd;
+				.dropdown-bg-responsive;
+				 position: relative;
+				 left: -120px;
+			}
+		 }
+	}
+}
 @media only screen (min-width:768px) and (max-width:991px) {
      #userdropdown{ border: 1px solid #ccc;}
     .quicklinks-section { }
@@ -1325,7 +1368,6 @@ ul.sidebar-nav {
             }
         }
 }
-
 @media only screen and (min-width:1120px) and (max-width: 1319px) {
     #userdropdown{ border: 1px solid blue;}
     .quicklinks-section {
@@ -1346,9 +1388,6 @@ ul.sidebar-nav {
             }
         }
     }
-
-
-
 //Larger Scrrens
 @media only screen and (min-width: 992px ) and ( max-width: 1119px ) {
     #userdropdown{ border: 1px solid yellow; }

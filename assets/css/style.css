@@ -164,6 +164,8 @@ table.borderless thead tr th {
   letter-spacing: 4.4px;
   text-align: left;
   color: #fff;
+  top: 3px;
+  position: relative;
 }
 .header-logo {
   color: #fff;
@@ -828,6 +830,8 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     padding: 0;
     margin-top: 17px;
     padding-left: 0px;
+    position: relative;
+    top: 00;
   }
   .h60 {
     height: 60px;
@@ -1039,7 +1043,7 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     transition: all .4s ease 0s;
   }
   .header-logo {
-    height: 59px;
+    height: 60px;
   }
   .header-logo a.navbar-brand {
     width: 85px;
@@ -1065,6 +1069,12 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .sidebar-nav {
+    top: 00;
+  }
+  .sidebar-nav li.mobile-back-arrow:hover {
+    background: none;
+  }
   .quicklinks-section .navbar-nav .dropdown .dropdown-menu {
     width: 194px;
     height: 274px;
@@ -1085,7 +1095,61 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     border-image-source: linear-gradient(to top, rgba(129, 129, 129, 0.38), #c7c7c7);
     border-image-slice: 1;
     background-color: #fff;
-    width: 295px;
+    position: relative;
+  }
+  .loanadvisor-section .navbar-nav .dropdown-menu {
+    width: 194px;
+    height: 217px;
+    box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to top, rgba(129, 129, 129, 0.38), #c7c7c7);
+    border-image-slice: 1;
+    background-color: #fff;
+    position: relative;
+    height: auto;
+  }
+  #wrapper.active #page-content-wrapper .page-content {
+    margin-left: 00;
+    transition: all .4s ease 0s;
+  }
+  #wrapper {
+    padding-left: 00;
+  }
+  #sidebar {
+    background: #5c6470;
+    position: fixed;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+    height: 100%;
+  }
+  #sidebar li a i.fa-lg {
+    margin-right: 25px;
+    margin-top: 20px;
+    width: 15px;
+  }
+}
+@media (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+  .quicklinks-section .navbar-nav .dropdown .dropdown-menu {
+    width: 194px;
+    height: 274px;
+    box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to top, rgba(129, 129, 129, 0.38), #c7c7c7);
+    border-image-slice: 1;
+    background-color: #fff;
+  }
+  .statistic-section .navbar-nav .dropdown-menu {
+    width: 327px;
+    height: 505px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to top, rgba(129, 129, 129, 0.38), #c7c7c7);
+    border-image-slice: 1;
+    background-color: #fff;
     position: relative;
     left: -155px;
   }
@@ -1100,23 +1164,6 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     background-color: #fff;
     position: relative;
     left: -120px;
-    height: auto;
-  }
-  #wrapper.active #page-content-wrapper .page-content {
-    margin-left: 00;
-    transition: all .4s ease 0s;
-  }
-  #sidebar {
-    background: #5c6470;
-    position: fixed;
-    z-index: 10000;
-    transition: all .4s ease 0s;
-    height: 100%;
-  }
-  #sidebar li a i.fa-lg {
-    margin-right: 25px;
-    margin-top: 20px;
-    width: 15px;
   }
 }
 @media only screen (min-width: 768px) and (max-width: 991px) {
