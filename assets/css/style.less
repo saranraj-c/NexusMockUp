@@ -288,12 +288,11 @@ table.borderless {
     .prod-state{ margin: 0 7.5%; color: #999;}
 	.static-holder {
 		padding: 10px 0 0 12px;
+		z-index: 2;
 	}
 	.tab-content {
 //		margin: 7.5%;
         padding: 0 7.5% 0;
-        max-height: 480px;
-        overflow-y: auto;
 		.table-border {
 			border: 1px solid #ccc;
 			background: #fff;
@@ -333,6 +332,7 @@ table.borderless {
 					td {
 						height: 20px;
 						padding: 0 !important;
+						font-size: 12px;
 					}
 				}
 			}
@@ -492,7 +492,7 @@ table.borderless {
     list-style: none;
     margin: 0;
     padding: 0;
-	top: 10px;
+	top: 0px;
 }
 div.Header {
 	margin-top: 24px;
@@ -707,6 +707,7 @@ button.close {
 }
 a.btn-close {
 	color: #000;
+	font-size: 12px;
 }
 .static-holder {
 	.right-innerlink {
@@ -814,7 +815,7 @@ ul.sidebar-nav {
     float: left;
    	padding: 5px;
     left: 20px;
-    top: 8px;
+    top: 10px;
 	z-index: 9999; //**
 }
 .navbar-toggle .icon-bar{
@@ -909,7 +910,7 @@ ul.sidebar-nav {
 .statistic-dd{
 	  width: 327px;
 //	  width: auto;
-	  height: 495px;
+	  height: 505px;
 	  background-color: #f7f7f7;
 	  box-shadow: 0px 9px 15px 0 rgba(1, 1, 1, 0.13);
 	  border-style: solid;
@@ -922,15 +923,62 @@ ul.sidebar-nav {
 }
 
 
+.faquick {
+  width: 14px;
+  height: 14px;
+  font-family: FontAwesome;
+  font-size: 16px;
+  text-align: left;
+  color: #fefefe;
+}
+.fachart {
+  width: 19px;
+  height: 15px;
+  font-family: FontAwesome;
+  font-size: 16px;
+  text-align: left;
+}
+.fauser{
+  width: 16px;
+  height: 17px;
+  font-family: FontAwesome;
+  font-size: 16px;
+  text-align: left;
+  color: #fefefe;
+}
+
 //Very Smallest device breakpoint
 @media ( min-width: 320px ) and ( max-width : 568px ) {
 	.navbar-fixed-top { margin-top:0; border: 0px solid red;}
-	.inner-top-right ul.nav{ margin-top: 0; margin-bottom: 0; }
+	.prod-state > h4{
+		font-size: 12px;
+	}
+	.inner-top-left{
+		.navbar-toggle{
+			padding: 4px 20px !important;
+		}
+	}
+	.inner-top-right {
+		margin-left: -10px;
+		ul.nav{ margin-top: 0; margin-bottom: 0; }
+	}
+
 	.header-logo{
-		height: 59px;
+		.h60;
+		a.navbar-brand{
+			width: 85px;
+			height: 16px;
+			font-size: 22px;
+			line-height: 1.18;
+			letter-spacing: 4.4px;
+			text-align: left;
+			padding: 0;
+			margin-top: 17px;
+			padding-left: 0px;
+		}
 	}
 	.h60{
-		height: 59px;
+		height: 60px;
 	}
 	.sidebar-nav {
 		top: 0px;
@@ -956,7 +1004,7 @@ ul.sidebar-nav {
 		padding-top: 00 !important;
 	}
 	#wrapper{
-		padding-left: 0px;
+		padding-left: 00px;
 	}
 	#wrapper.active{
 		#page-content-wrapper {
@@ -969,6 +1017,9 @@ ul.sidebar-nav {
 
 	.quicklinks-section {
 		.navbar-nav{
+			>li.dropdown{
+				width: 52px;
+			}
 			.dropdown{
 				.dropdown-menu{
 					.quicklinks-dd;
@@ -982,20 +1033,35 @@ ul.sidebar-nav {
 
 	}
     .statistic-section {
+		.togglelink-statistic{
+			.tab-content{
+				table#production-goal{
+					margin-top: 00;
+				}
+				#isRally{
+					max-height: 410px;
+					overflow-y: auto;
+				}
+			}
+		}
+
 		.navbar-nav{
+			>li.dropdown{
+				width: 52px;
+			}
 			.dropdown-menu{
 				.statistic-dd;
 					.dropdown-bg-responsive;
-					width: 295px;
+					width: 325px;
 					position: relative;
-					left: -165px;
+					left: -237px;
 			}
 		}
 	}
     .loanadvisor-section {
 		.navbar-nav{
-			#userdropdown{
-				width: 45px;
+			>li.dropdown{
+				width: 52px;
 			}
 		.dropdown-menu{
 				.advisor-dd;
@@ -1025,14 +1091,31 @@ ul.sidebar-nav {
 	.body-content{
 		padding-top: 00 !important;
 	}
+
 	.navbar-fixed-top { margin-top:0;}
-	.inner-top-right ul.nav{ margin-top: 0; margin-bottom: 0; }
+	.inner-top-right {
+		margin-left: -10px;
+		ul.nav{ margin-top: 0; margin-bottom: 0; }
+		.padd-r-10{
+			padding-right: 0;
+			i.fa-external-link-square{
+				.faquick;
+			}
+			i.fa-bar-chart-o{
+				.fachart;
+			}
+			i.fa-user{
+				.fauser;
+			}
+		}
+	}
 	.inner-top-left{
 		.navbar-toggle{
-			padding: 4px 10px !important;
+			padding: 4px 20px !important;
 		}
 	}
 	.sidebar-nav{
+		top: 00;
 		li.mobile-back-arrow{
 			&:hover{ background: none;}
 		}
@@ -1055,6 +1138,9 @@ ul.sidebar-nav {
 	}
 	.quicklinks-section {
 		.navbar-nav{
+			>li.dropdown{
+				width: 52px;
+			}
 			.dropdown{
 				.dropdown-menu{
 					.quicklinks-dd;
@@ -1065,23 +1151,35 @@ ul.sidebar-nav {
 	}
     .statistic-section {
 		.navbar-nav{
+			>li.dropdown{
+				width: 52px;
+			}
 			.dropdown-menu{
 				.statistic-dd;
 					.dropdown-bg-responsive;
-					width: 295px;
+					width: 325px;
 					position: relative;
-					left: -165px;
+					left: -237px;
+					background-color: #f7f7f7;
+			}
+		}
+		.togglelink-statistic{
+			.tab-content{
+
 			}
 		}
 	}
     .loanadvisor-section {
 		.navbar-nav{
+			>li.dropdown{
+				width: 52px;
+			}
 		.dropdown-menu{
 				.advisor-dd;
 				.dropdown-bg-responsive;
 				position: relative;
-				left: -120px;
-			height: auto !important;
+				left: -145px;
+				height: auto !important;
 			}
 		}
 	}
@@ -1097,7 +1195,9 @@ ul.sidebar-nav {
 			}
 		}
 	}
-
+	#wrapper{
+		padding-left: 00;
+	}
 	#wrapper.active{
 		#page-content-wrapper {
 			.page-content {
@@ -1118,14 +1218,10 @@ ul.sidebar-nav {
 					letter-spacing: 4.4px;
 					text-align: left;
 					padding: 0;
-					margin-top: 15px;
-					padding-left: 10px;
+					margin-top: 17px;
+					padding-left: 0px;
 			}
 	}
-	.h60{
-		height: 59px;
-	}
-
 
 }
 

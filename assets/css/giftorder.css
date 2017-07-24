@@ -316,6 +316,10 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary .btm-right-tr-data {
     display: inline-table;
   }
+  .gift-o-holder .right-row .gift-o-summary #gift-o-detail {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .gift-o-holder .right-row .gift-o-summary .data-head {
     font-weight: bold;
     padding-top: 5px;
@@ -369,12 +373,18 @@ a.show-gift-details:hover {
     border: solid 1px #c8c8c8;
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs td {
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
     background-color: #f9f9f9;
     padding: 20px;
+    z-index: 1;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .col-xs-6,
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail #gift-detail-col {
+    padding-right: 0;
+    padding-left: 0;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
     margin-bottom: 25px;
@@ -399,10 +409,16 @@ a.show-gift-details:hover {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
   }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
+    font-size: 18.5px !important;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.address {
+    line-height: 0.999 !important;
+  }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
     top: 30px;
-    z-index: 9999;
+    z-index: 2;
     left: -20px;
   }
   .gift-o-holder .right-row .gift-o-summary .table-responsive {
@@ -436,7 +452,7 @@ a.show-gift-details:hover {
 }
 @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .navbar-brand {
-    border: 1px solid yellow;
+    border: 0px solid yellow;
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
     margin-bottom: 2em;
@@ -541,8 +557,10 @@ a.show-gift-details:hover {
     cursor: pointer;
     display: none;
     position: relative;
-    left: -30px;
-    top: 20px;
+    left: -25px;
+    top: 45px;
+    color: #ccc;
+    z-index: 999;
   }
   .gift-o-holder .right-row .gift-o-summary span.angle-down {
     display: block;
@@ -557,6 +575,7 @@ a.show-gift-details:hover {
     margin-right: 10px;
   }
   .gift-o-holder .right-row .gift-o-summary table tr td {
+    border-collapse: collapse;
     word-wrap: break-word;
   }
   .gift-o-holder .right-row .gift-o-summary table tr td,
@@ -574,12 +593,13 @@ a.show-gift-details:hover {
     border: solid 1px #c8c8c8;
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs td {
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
     background-color: #f9f9f9;
     padding: 20px;
+    z-index: 1;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
     margin-bottom: 25px;
@@ -618,8 +638,8 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
     top: 27px;
-    z-index: 9999;
-    left: -15px;
+    z-index: 2;
+    left: -10px;
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail i.fa-lg {
     width: 13px;
