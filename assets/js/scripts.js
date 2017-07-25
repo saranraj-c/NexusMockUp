@@ -38,9 +38,9 @@ jQuery(document).ready(function() {
         $("#sidebar").animate({ "left": "0", "width":"320" }).css("display","block");
         //$("#overlay").show();
     });
-	setTimeout( function () {
-		$('.mobile-back-arrow').trigger('click');
-	}, 1);
+//	setTimeout( function () {
+//		$('.mobile-back-arrow').trigger('click');
+//	}, 1);
 	
 
 

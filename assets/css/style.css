@@ -534,7 +534,6 @@ button.close {
 }
 .sidebar-nav {
   position: absolute;
-  top: 10px;
   right: 0;
   width: 235px;
   margin: 0;
@@ -846,7 +845,7 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
     top: 0px;
   }
   #sidebar {
-    left: 0;
+    left: -320px;
   }
   #sidebar {
     background: #5c6470;
