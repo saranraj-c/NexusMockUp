@@ -26,11 +26,11 @@ body{
 	max-width: 100%;
 }
 .mg-image:hover img {
-    -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
+    -webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
 }
 
 /* just apply some height and width to the wrapper.*/
@@ -110,6 +110,7 @@ body{
 }
 a.show-gift-details{
 	font-weight: bold;
+	color: #578ebe;
 	&:hover{
 		text-decoration: none;
 	}
@@ -215,7 +216,7 @@ a.show-gift-details{
 						margin-left: -6px;
     					margin-top: -6px;
 						&:hover{
-							transform:scale(1.25);
+							transform:scale(1.15);
 						}
 					}
 					.figcaption{ 
@@ -250,6 +251,14 @@ a.show-gift-details{
 				thead{					
 					tr{
 						cursor: pointer;
+						th{
+						  font-family: Roboto;
+						  font-size: 19px;
+						  line-height: 1.95;
+						  color: #4f5a67;
+						  border-bottom: 1px solid #d7d7d7;
+						  font-weight: normal;
+						}
 					}
 				}
 				tr.setwhite{
@@ -258,8 +267,14 @@ a.show-gift-details{
 				tr.setbg{
 					background-color: #f4f4f4;
 				}
+				tr{
+					max-height: 38px;
+					height: 38px;
+				}
 				tr td{
 					border-width: 0;
+					font-size: 14px;
+					line-height: 2.64;
 				}
 				tr:nth-child(3n+1) {
 //					background-color: yellow;
@@ -283,14 +298,44 @@ a.show-gift-details{
 						}
 					}
 					border-bottom-width: 0;
-				}
-				.gift-detail-table{
-					.close-gift-o-details{
-						color: #ccc;
-						cursor: pointer;
-					}
-					tr{
-						background: #f9f9f9;
+					table.gift-detail-table{
+						thead{
+							>tr{
+								>th{
+									border-bottom: 1px solid #ebebeb;
+								}
+							}
+							th{
+								color: #4f5a67;
+								font-size: 16px;
+							}
+						}
+						.close-gift-o-details{
+							color: #ccc;
+							cursor: pointer;
+						}
+						tr{
+							background: #f9f9f9;
+							border-bottom: 1px solid #ebebeb;
+						}
+						tbody{
+							tr{
+								border-bottom-width: 0;
+								th{
+									font-size: 14px;
+									font-weight: 300;
+									line-height: 1.86;
+									color: #47515c;
+								}
+								td{
+									border-top-width: 0;
+									font-size: 14px;
+									font-weight: 300;
+  									line-height: 1.86;
+									color: #47515c;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -346,7 +391,6 @@ a.show-gift-details{
 
 
 	.gift-o-holder{
-		.gift-holder-comon;
 		.title{
 			font-weight: 700;
 			margin-left: 0;
@@ -388,7 +432,7 @@ a.show-gift-details{
 								width: 300px;
 							}
 							figcaption{ 
-														
+								width:300px;
 							}
 							h3{ 
 								
@@ -573,9 +617,30 @@ a.show-gift-details{
 		}
 	}
 }
-
 @media (min-width: 375px) and (max-width : 667px) and( orientation: portrait) {
-	.navbar-brand{ border: 0px solid yellow;}
+	.navbar-brand{ border: 1px solid green;}
+
+	.gift-o-inner {
+		.left-row{
+			.gift-holder{
+					margin: 0;
+					width: 310px !important;
+					figure {
+						margin: 0;
+							img{
+								height: 250px;
+//								width: auto;
+							}
+							figcaption{
+								width:300px;
+							}
+							h3{
+
+							}
+				}
+			}
+		}
+	}
 	.gift-o-holder{
 		.right-row{
 			.gift-o-summary{
@@ -870,15 +935,19 @@ a.show-gift-details{
 				padding: 20px 0 15px 0;
 				.gift-holder{
 					margin: 0;
+					width: auto !important;
 				}
 
 				figure {
-						margin: 0;
+					margin: 0;
+					margin-left: 5px;
+				    margin-right: -10px;
 							img{
 								height: 250px;
+								width: 100%;
 							}
 							figcaption{
-
+								width: 100%;
 							}
 							h3{
 
@@ -1069,3 +1138,87 @@ a.show-gift-details{
 		}
 }
 
+//ipad
+@media only screen and (min-width:768px) and (max-width:1024px) { //
+	#userdropdown{ border: 1px solid black; }
+
+}
+//Larger Scrrens
+@media only screen and (min-width: 992px ) and ( max-width: 1119px ) {
+    #userdropdown{ border: 1px solid yellow; }
+	.quicklinks-section {
+		.dropdown-toggle{
+				label.padd-r-10{
+
+						}
+		}
+	}
+    .statistic-section {}
+    .loanadvisor-section {
+        #userdropdown > a {
+					label.padd-r-10{
+
+					}
+            }
+        }
+	.gift-o-holder{
+		.left-row{
+			padding: 0;
+			.gift-thumb{
+//				margin-left: 25px;
+//				margin-right: 25px;
+				.gift-holder{
+					margin: 0;
+					width: auto !important;
+				}
+
+				figure {
+					margin: 0;
+					margin-left: 5px;
+				    margin-right: -10px;
+							img{
+								height: 250px;
+								width: 100%;
+							}
+							figcaption{
+								width: 100%;
+							}
+							h3{
+
+							}
+				}
+			}
+		}
+	}
+
+}
+
+//Break it for resizing - responsive
+@media (min-width: 1200px){
+
+	.gift-o-holder {
+		width: 100%;
+		.left-row {
+			.gift-thumb {
+				.gift-holder{
+					width: 100% !important;
+					figure{
+						img{
+							width: 100%;
+							margin-left: 0;
+							margin-right: 0;
+							margin-top:0;
+						}
+						figcaption{
+							width: 100%;
+							margin-left: 0;
+							margin-right: 0;
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

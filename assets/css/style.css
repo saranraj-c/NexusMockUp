@@ -374,7 +374,7 @@ table.borderless thead tr th {
   transition: all .4s ease 0s;
 }
 #wrapper.active .menu-icon-left {
-  margin-left: 00px;
+  margin-left: -13px;
 }
 .sidebar-wrapper {
   padding-left: 0;
@@ -798,6 +798,12 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
   font-size: 16px;
   text-align: left;
   color: #fefefe;
+}
+.dropdown-menu li.disabled > a {
+  font-size: 12px;
+}
+.navbar-nav li > a {
+  font-size: 14px;
 }
 @media (min-width: 320px) and (max-width: 568px) {
   .navbar-fixed-top {
