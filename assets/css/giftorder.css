@@ -323,6 +323,9 @@ a.show-gift-details:hover {
   width: 300px;
 }
 @media (min-width: 320px) and (max-width: 568px) {
+  #sidebar {
+    left: -320px;
+  }
   #inner-container {
     background: #f9f9f9;
   }
@@ -359,17 +362,21 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .left-row .gift-thumb .gift-holder {
     margin: 0;
-    width: 310px !important;
+    width: 100%;
   }
   .gift-o-holder .left-row .gift-thumb figure {
     margin: 0;
   }
   .gift-o-holder .left-row .gift-thumb figure img {
     height: 250px;
-    width: 300px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .gift-o-holder .left-row .gift-thumb figure figcaption {
-    width: 300px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .gift-o-holder .right-row {
     padding: 20px 0;
@@ -540,18 +547,26 @@ a.show-gift-details:hover {
   .navbar-brand {
     border: 1px solid green;
   }
+  #sidebar {
+    left: -320px;
+  }
   .gift-o-inner .left-row .gift-holder {
     margin: 0;
-    width: 310px !important;
+    width: 100%;
   }
   .gift-o-inner .left-row .gift-holder figure {
     margin: 0;
   }
   .gift-o-inner .left-row .gift-holder figure img {
     height: 250px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .gift-o-inner .left-row .gift-holder figure figcaption {
-    width: 300px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
     margin-bottom: 2em;
@@ -572,6 +587,9 @@ a.show-gift-details:hover {
   }
 }
 @media (min-width: 375px) and (max-width: 667px) {
+  #sidebar {
+    left: -320px;
+  }
   #inner-container {
     background: #f9f9f9;
   }
@@ -614,6 +632,14 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .left-row .gift-thumb figure img {
     height: 250px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .gift-o-holder .left-row .gift-thumb figure figcaption {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   .gift-o-holder .right-row {
     padding: 20px 0;
@@ -777,7 +803,7 @@ a.show-gift-details:hover {
 }
 @media (min-width: 414px) and (max-width: 736px) {
   .navbar-brand {
-    border: 1px solid yellow;
+    border: 1px solid #ccc;
   }
   .gift-o-holder .title {
     font-weight: 700;
@@ -811,15 +837,19 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .left-row .gift-thumb figure {
     margin: 0;
-    margin-left: 5px;
-    margin-right: -10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .gift-o-holder .left-row .gift-thumb figure img {
     height: 250px;
     width: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
   .gift-o-holder .left-row .gift-thumb figure figcaption {
     width: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
   .gift-o-holder .right-row {
     padding: 20px 0;
@@ -969,6 +999,9 @@ a.show-gift-details:hover {
   }
 }
 @media (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+  #sidebar {
+    left: -320px;
+  }
   #ShowMyModal .modal-dialog {
     width: auto;
     top: 10%;
@@ -977,7 +1010,14 @@ a.show-gift-details:hover {
     margin: 10px;
   }
   #ShowMyModal .modal-body figure img {
-    width: 310px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #ShowMyModal .modal-body figure figcaption {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
   #ShowMyModal .modal-body .gift-description {
     padding-left: 25px;
@@ -987,10 +1027,16 @@ a.show-gift-details:hover {
   #userdropdown {
     border: 1px solid black;
   }
+  #sidebar {
+    left: -320px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1119px) {
   #userdropdown {
     border: 1px solid yellow;
+  }
+  #sidebar {
+    left: -320px;
   }
   .gift-o-holder .left-row {
     padding: 0;
@@ -1013,6 +1059,9 @@ a.show-gift-details:hover {
   }
 }
 @media (min-width: 1200px) {
+  #sidebar {
+    left: -320px;
+  }
   .gift-o-holder {
     width: 100%;
   }

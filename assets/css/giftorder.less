@@ -378,8 +378,10 @@ a.show-gift-details{
 	}
 }
 
+
 //Very Smallest device breakpoint
 @media ( min-width: 320px ) and ( max-width : 568px ) {
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 	#inner-container{
 		background: #f9f9f9;
 	}
@@ -422,17 +424,25 @@ a.show-gift-details{
 				padding: 20px 0 15px 0;
 				.gift-holder{
 					margin: 0;
-					width: 310px !important;
+//					width: 310px !important;
+					width: 100%;
+
 				}
 				
 				figure {
 						margin: 0;
 							img{				
 								height: 250px;
-								width: 300px;
+//								width: 300px;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							figcaption{ 
-								width:300px;
+//								width:300px;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							h3{ 
 								
@@ -619,20 +629,27 @@ a.show-gift-details{
 }
 @media (min-width: 375px) and (max-width : 667px) and( orientation: portrait) {
 	.navbar-brand{ border: 1px solid green;}
-
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 	.gift-o-inner {
 		.left-row{
 			.gift-holder{
 					margin: 0;
-					width: 310px !important;
+					width: 100%;
+//					width: 310px !important;
 					figure {
 						margin: 0;
 							img{
 								height: 250px;
 //								width: auto;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							figcaption{
-								width:300px;
+//								width:300px;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							h3{
 
@@ -671,7 +688,7 @@ a.show-gift-details{
 	}
 }
 @media (min-width: 375px) and (max-width : 667px) {
-
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 	#inner-container{
 		background: #f9f9f9;
 	}
@@ -715,9 +732,14 @@ a.show-gift-details{
 						margin: 0;
 							img{
 								height: 250px;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							figcaption{
-
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
 							}
 							h3{
 
@@ -907,7 +929,7 @@ a.show-gift-details{
 	}
 }
 @media (min-width: 414px) and (max-width : 736px) {
-	.navbar-brand{ border: 1px solid yellow;}
+	.navbar-brand{ border: 1px solid #ccc;}
 		.gift-o-holder{
 		.title{
 			font-weight: 700;
@@ -940,14 +962,19 @@ a.show-gift-details{
 
 				figure {
 					margin: 0;
-					margin-left: 5px;
-				    margin-right: -10px;
+					margin-left: 0px;
+//				    margin-right: -10px;
+				    margin-right: 0px;
 							img{
 								height: 250px;
 								width: 100%;
+								margin-top: 0;
+								margin-left: 0;
 							}
 							figcaption{
 								width: 100%;
+								margin-top: 0;
+								margin-left: 0;
 							}
 							h3{
 
@@ -1119,6 +1146,7 @@ a.show-gift-details{
 	}
 }
 @media (min-width: 414px) and (max-width : 736px) and ( orientation : landscape ){
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 		#ShowMyModal{
 			.modal-dialog{
 				width: auto;
@@ -1128,7 +1156,15 @@ a.show-gift-details{
 				margin:10px;
 				figure{
 					img{
-						width: 310px;
+//						width: 310px;
+						width: 100%;
+						margin-left: 0;
+						margin-top: 0;
+					}
+					figcaption{
+						width: 100%;
+						margin-left: 0;
+						margin-top: 0;
 					}
 				}
 				.gift-description{
@@ -1141,11 +1177,12 @@ a.show-gift-details{
 //ipad
 @media only screen and (min-width:768px) and (max-width:1024px) { //
 	#userdropdown{ border: 1px solid black; }
-
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 }
 //Larger Scrrens
 @media only screen and (min-width: 992px ) and ( max-width: 1119px ) {
     #userdropdown{ border: 1px solid yellow; }
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 	.quicklinks-section {
 		.dropdown-toggle{
 				label.padd-r-10{
@@ -1195,7 +1232,7 @@ a.show-gift-details{
 
 //Break it for resizing - responsive
 @media (min-width: 1200px){
-
+	#sidebar{ left: -320px; } //to hide the Lnav by default
 	.gift-o-holder {
 		width: 100%;
 		.left-row {
