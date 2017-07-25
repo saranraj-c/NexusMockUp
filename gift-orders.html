@@ -11,8 +11,7 @@
     <meta name="pagetype" content="home" />
     <title>CRM Nexus Anywhere</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -500,14 +499,16 @@
 											<h1 class="title">Gift Order</h1>
 											<div class="row gift-title-container">
 												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 title-holder" id="gift-title">												
-													<h3 class="sub-title active" data-giftList-toShow="#gitf_items" data-source-event="gift">Gift Items</h3>
+													<h3 class="sub-title-lg active hidden-xs" data-giftList-toShow="#gitf_items" data-source-event="gift">Gift Items</h3>
+													<h3 class="sub-title active visible-xs" data-giftList-toShow="#gitf_items" data-source-event="gift">Gift Items</h3>
 												</div>
 												<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 title-holder" id="history-title">												
-													<h3 class="sub-title" data-summary-toShow="#gitf_ord_summary" data-source-event="history">Order History</h3>										
+													<h3 class="sub-title-lg hidden-xs" data-summary-toShow="#gitf_ord_summary" data-source-event="history">Order History</h3>
+													<h3 class="sub-title visible-xs" data-summary-toShow="#gitf_ord_summary" data-source-event="history">Order History</h3>
 												</div>
 											</div>											
 											<div class="gift-o-inner ">												
-												<div class="left-row col-lg-6 col-md-12 col-sm-12 col-xs-12" id="gitf_items">
+												<div class="left-row col-lg-5 col-md-12 col-sm-12 col-xs-12" id="gitf_items">
 													<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 gift-thumb">
 														<div class="gift-holder">
 															<figure class="figure">
@@ -613,7 +614,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="right-row col-lg-6 col-md-12 col-sm-12 col-xs-12">
+												<div class="right-row col-lg-7 col-md-12 col-sm-12 col-xs-12">
 													<h2 class="visible-xs mobile-history-title">Order History</h2>
 													<div class="gift-o-summary" id="gitf_ord_summary">
 														 <div class="view-docs table table-responsive">
