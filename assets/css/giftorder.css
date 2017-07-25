@@ -136,14 +136,18 @@ a.show-gift-details:hover {
   display: none;
 }
 .gift-o-holder .title {
-  font-weight: 700;
-  margin-left: 40px;
+  margin-left: 38px;
+  font-size: 36px;
+  line-height: 1.61;
+  height: 28px;
+  color: #464646;
 }
 .gift-o-holder .gift-title-container {
   margin-left: 25px;
 }
 .gift-o-holder .title-holder {
   padding-left: 0;
+  margin-top: 10px;
 }
 .gift-o-holder #gift-title h3 {
   margin-left: 15px;
@@ -213,7 +217,7 @@ a.show-gift-details:hover {
   margin-top: -6px;
 }
 .gift-o-holder .left-row .gift-thumb figure img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 .gift-o-holder .left-row .gift-thumb figure .figcaption {
   font-size: x-large;
@@ -335,7 +339,6 @@ a.show-gift-details:hover {
     display: none;
   }
   .gift-o-holder .title {
-    font-weight: 700;
     margin-left: 0;
   }
   .gift-o-holder #gift-title {
@@ -599,7 +602,6 @@ a.show-gift-details:hover {
     display: none;
   }
   .gift-o-holder .title {
-    font-weight: 700;
     margin-left: 0;
   }
   .gift-o-holder #gift-title {
@@ -806,7 +808,6 @@ a.show-gift-details:hover {
     border: 0px solid #ccc;
   }
   .gift-o-holder .title {
-    font-weight: 700;
     margin-left: 0;
   }
   .gift-o-holder #gift-title {
