@@ -545,7 +545,7 @@ a.show-gift-details:hover {
 }
 @media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
   .navbar-brand {
-    border: 1px solid green;
+    border: 0px solid green;
   }
   #sidebar {
     left: -320px;
@@ -803,7 +803,7 @@ a.show-gift-details:hover {
 }
 @media (min-width: 414px) and (max-width: 736px) {
   .navbar-brand {
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
   }
   .gift-o-holder .title {
     font-weight: 700;
@@ -1025,12 +1025,12 @@ a.show-gift-details:hover {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   #userdropdown {
-    border: 1px solid black;
+    border: 0px solid black;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1119px) {
   #userdropdown {
-    border: 1px solid yellow;
+    border: 0px solid yellow;
   }
   .gift-o-holder .left-row {
     padding: 0;
@@ -1057,9 +1057,6 @@ a.show-gift-details:hover {
   }
 }
 @media (min-width: 1200px) {
-  #sidebar {
-    left: -320px;
-  }
   .gift-o-holder {
     width: 100%;
   }
