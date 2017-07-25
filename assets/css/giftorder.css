@@ -258,14 +258,13 @@ a.show-gift-details:hover {
 .gift-o-holder .right-row .view-docs table.table tr.setbg {
   background-color: #f4f4f4;
 }
-.gift-o-holder .right-row .view-docs table.table tr {
-  max-height: 38px;
-  height: 38px;
-}
 .gift-o-holder .right-row .view-docs table.table tr td {
   border-width: 0;
   font-size: 14px;
   line-height: 2.64;
+  height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .gift-o-holder .right-row .view-docs table.table .show-gift-details {
   position: relative;
@@ -409,21 +408,20 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .data-head {
     font-weight: bold;
-    padding-top: 5px;
     text-align: left;
   }
   .gift-o-holder .right-row .gift-o-summary .data-value {
-    padding-top: 5px;
+    padding-top: 0px;
     color: #b1b1b1;
     text-align: left;
+    margin-bottom: 10px;
   }
   .gift-o-holder .right-row .gift-o-summary .summary-responsive {
-    margin-bottom: 20px;
-    margin-top: 0px;
-    margin-left: 15px;
     padding-right: 0;
     /* padding-left: 0; */
     text-align: center;
+    margin-left: 25px;
+    padding-top: 15px;
   }
   .gift-o-holder .right-row .gift-o-summary span.angle-down,
   .gift-o-holder .right-row .gift-o-summary span.angle-up {
@@ -511,9 +509,9 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
-    top: 30px;
+    top: 0px;
     z-index: 2;
-    left: -17px;
+    left: -8px;
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail i.fa-lg {
     width: 13px;
@@ -663,21 +661,22 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .data-head {
     font-weight: bold;
-    padding-top: 5px;
     text-align: left;
   }
   .gift-o-holder .right-row .gift-o-summary .data-value {
-    padding-top: 5px;
+    padding-top: 0px;
     color: #b1b1b1;
     text-align: left;
+    margin-bottom: 10px;
   }
   .gift-o-holder .right-row .gift-o-summary .summary-responsive {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 15px;
     padding-right: 0;
     /* padding-left: 0; */
     text-align: center;
+    margin-left: 25px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .summary-responsive .col-xs-6 {
+    margin-top: -25px;
   }
   .gift-o-holder .right-row .gift-o-summary span.angle-down,
   .gift-o-holder .right-row .gift-o-summary span.angle-up {
@@ -685,7 +684,7 @@ a.show-gift-details:hover {
     display: none;
     position: relative;
     left: -25px;
-    top: 45px;
+    top: 25px;
     color: #ccc;
     z-index: 999;
   }
@@ -726,6 +725,7 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
     background-color: #f9f9f9;
     padding: 20px;
+    margin-top: -45px;
     z-index: 1;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
@@ -764,7 +764,7 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
-    top: 27px;
+    top: 0px;
     z-index: 2;
     left: -10px;
   }
@@ -872,19 +872,15 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .data-head {
     font-weight: bold;
-    padding-top: 5px;
     text-align: left;
   }
   .gift-o-holder .right-row .gift-o-summary .data-value {
-    padding-top: 5px;
+    padding-top: 0px;
     color: #b1b1b1;
     text-align: left;
+    margin-bottom: 10px;
   }
   .gift-o-holder .right-row .gift-o-summary .summary-responsive {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 15px;
-    padding-right: 0;
     /* padding-left: 0; */
     text-align: center;
   }
@@ -894,7 +890,7 @@ a.show-gift-details:hover {
     display: none;
     position: relative;
     left: -25px;
-    top: 45px;
+    top: 25px;
     color: #ccc;
     z-index: 999;
   }
@@ -935,6 +931,7 @@ a.show-gift-details:hover {
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail {
     background-color: #f9f9f9;
     padding: 20px;
+    margin-top: -25px;
     z-index: 1;
   }
   .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .gift-detail {
@@ -973,9 +970,9 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail {
     position: relative;
-    top: 27px;
+    top: 0px;
     z-index: 2;
-    left: -10px;
+    left: -8px;
   }
   .gift-o-holder .right-row .gift-o-summary .close-gift-detail i.fa-lg {
     width: 13px;
