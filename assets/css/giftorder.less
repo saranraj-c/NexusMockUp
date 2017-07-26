@@ -120,7 +120,6 @@ a.show-gift-details{
 	background: #f9f9f9;
 }
 .dsc{
-//	position: absolute;
 	padding-left: 10px;
 	margin-top: -5px;
 }
@@ -388,43 +387,11 @@ a.show-gift-details{
 	padding-left: 0;
 }
 
-
+.gift-detail-mobile-container{
+	display: none;
+}
 //Very Smallest device breakpoint
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){	
-    .navbar-brand{ border: 0px solid blue;}
-	.gift-o-holder{
-		.right-row{
-			.gift-summ-mobile{
-				.gift-summ-mobile-container{
-					.summary-value{
-						    font-size: 14px !important;
-					}
-					.summary-header{
-						font-size: 18px !important;
-					}
-				}
-			}	
-
-		}
-	}
-}
-
-@media ( min-width: 320px ) and ( max-width : 568px ) and (orientation : portrait){
-	.navbar-brand{ border: 0px solid yellow;}
-	.gift-o-holder{
-		.right-row{
-			.gift-summ-mobile{
-				.gift-summ-mobile-container{
-					.portrait-w{
-						width: 100%;
-					}
-				}
-			}	
-
-		}
-	}
-}
 @media ( min-width: 320px ) and ( max-width : 568px ) {
 	#sidebar{ left: -320px; } //to hide the Lnav by default
 	#inner-container{
@@ -749,170 +716,40 @@ a.show-gift-details{
 		}
 	}
 }
-@media (min-width: 375px) and (max-width : 667px) and( orientation: portrait) {
-	.navbar-brand{ border: 0px solid green;}
-	#sidebar{ left: -320px; } //to hide the Lnav by default
-	.gift-o-inner {
-		.left-row{
-			.gift-holder{
-					margin: 0;
-					width: 100%;
-//					width: 310px !important;
-					figure {
-						margin: 0;
-							img{
-								height: 250px;
-//								width: auto;
-								width: 100%;
-								margin-left: 0;
-								margin-top: 0;
-							}
-							figcaption{
-//								width:300px;
-								width: 100%;
-								margin-left: 0;
-								margin-top: 0;
-							}
-							h3{
-
-							}
-				}
-			}
-		}
-	}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){
+    .navbar-brand{ border: 0px solid blue;}
 	.gift-o-holder{
 		.right-row{
-			.gift-o-summary{
-
-				.gift-summ-mobile{
-					.gift-summ-mobile-container{
-						box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
-  						border: solid 1px #c8c8c8;
-						.col-xs-6{
-							padding-left: 0;
-						}
-						span.angle-down,
-						span.angle-up{
-							cursor: pointer;
-							display: none;
-							position: absolute;
-							right: 20px;
-							top: 25px;
-							color: #ccc;
-							z-index: 999;
-						}
-						span.angle-down{
-							display: block;
-						}
-
-						.summary-header{
-							font-size: 23.4px;
-  							line-height: 3.41;
-							 color: #333333;
-						}
-						.summary-value{
-							font-size: 22px;
-  							line-height: 1.68;
-							color: #a5a5a5;
-						}
+			.gift-summ-mobile{
+				.gift-summ-mobile-container{
+					.summary-value{
+						    font-size: 14px !important;
 					}
-				}
-				tr.visible-xs{
-					margin-bottom: 2em;
-				}
-				.gift-summary-detail{
-					#gift-o-detail{
-						margin-left: 5px;
-						margin-right: 5px;
-					}
-					.col-xs-6{
-						padding-right: 0;
-						padding-left: 0;
-					}
-					p.detail-title{
-						font-size: 18.5px !important;
-					}
-					p.address{
-						line-height: 0.999 !important;
-					}
-					#address-parent{
-//						margin-bottom: 15px;
+					.summary-header{
+						font-size: 18px !important;
 					}
 				}
 			}
+
 		}
 	}
 }
-@media (min-width: 375px) and (max-width : 667px) and (orientation : landscape) {
-	.navbar-brand{ border: 0px solid #fff;}
-	.gift-o-holder {
-		.right-row {
-
+@media ( min-width: 320px ) and ( max-width : 568px ) and (orientation : portrait){
+	.navbar-brand{ border: 0px solid yellow;}
+	.gift-o-holder{
+		.right-row{
 			.gift-summ-mobile{
-					.gift-summ-mobile-container{
-						.col-xs-6{
-							padding-left: 40px;
-							padding-top: 10px;
-						}
-						span.angle-down,
-						span.angle-up{
-							cursor: pointer;
-							display: none;
-							position: absolute;
-							right: 20px;
-							top: 25px;
-							color: #ccc;
-							z-index: 999;
-						}
-						span.angle-down{
-							display: block;
-						}
-						.left-first-col{
-							padding-left: 40px;
-							padding-top:10px;
-						}
-						.summary-header{
-							    font-size: 16px;
-								line-height: 2;
-								color: #333333;
-								font-weight: bold;
-						}
-						.summary-value{
-							    font-size: 14px;
-    							line-height: 1.68;
-								color: #a5a5a5;
-						}
-						.gift-detail-mobile-container{							
-							.close-gift-detail{
-								    
-							}
-							p.theader{
-								font-size: 24px;
-  								line-height: 1.54;
-							  	color: #4f5a67;
-								font-weight: 600;
-							}
-							p.tdata{
-							  font-size: 16px;
-							  font-weight: 300;
-							  line-height: 1.63;
-							  color: #47515c;
-							}
-						}
+				.gift-summ-mobile-container{
+					.portrait-w{
+						width: 100%;
 					}
 				}
-
-
-			.gift-o-summary
-			{
-
-				.summary-responsive{
-
-				}
 			}
+
 		}
-		}
+	}
 }
+
 @media (min-width: 375px) and (max-width : 667px) {
 	.navbar-brand{ border: 0px solid #ddd;}
 	#sidebar{ left: -320px; } //to hide the Lnav by default
@@ -1238,6 +1075,171 @@ a.show-gift-details{
 		}
 	}
 }
+@media (min-width: 375px) and (max-width : 667px) and( orientation: portrait) {
+	.navbar-brand{ border: 0px solid green;}
+	#sidebar{ left: -320px; } //to hide the Lnav by default
+	.gift-o-inner {
+		.left-row{
+			.gift-holder{
+					margin: 0;
+					width: 100%;
+//					width: 310px !important;
+					figure {
+						margin: 0;
+							img{
+								height: 250px;
+//								width: auto;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
+							}
+							figcaption{
+//								width:300px;
+								width: 100%;
+								margin-left: 0;
+								margin-top: 0;
+							}
+							h3{
+
+							}
+				}
+			}
+		}
+	}
+	.gift-o-holder{
+		.right-row{
+			.gift-o-summary{
+
+				.gift-summ-mobile{
+					.gift-summ-mobile-container{
+						box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
+  						border: solid 1px #c8c8c8;
+						.col-xs-6{
+							padding-left: 0;
+						}
+						span.angle-down,
+						span.angle-up{
+							cursor: pointer;
+							display: none;
+							position: absolute;
+							right: 20px;
+							top: 25px;
+							color: #ccc;
+							z-index: 999;
+						}
+						span.angle-down{
+							display: block;
+						}
+
+						.summary-header{
+							font-size: 23.4px;
+  							line-height: 3.41;
+							 color: #333333;
+						}
+						.summary-value{
+							font-size: 22px;
+  							line-height: 1.68;
+							color: #a5a5a5;
+						}
+					}
+				}
+				tr.visible-xs{
+					margin-bottom: 2em;
+				}
+				.gift-summary-detail{
+					#gift-o-detail{
+						margin-left: 5px;
+						margin-right: 5px;
+					}
+					.col-xs-6{
+						padding-right: 0;
+						padding-left: 0;
+					}
+					p.detail-title{
+						font-size: 18.5px !important;
+					}
+					p.address{
+						line-height: 0.999 !important;
+					}
+					#address-parent{
+//						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 375px) and (max-width : 667px) and (orientation : landscape) {
+	.navbar-brand{ border: 0px solid #fff;}
+	.gift-o-holder {
+		.right-row {
+
+			.gift-summ-mobile{
+					.gift-summ-mobile-container{
+						.col-xs-6{
+							padding-left: 40px;
+							padding-top: 10px;
+						}
+						span.angle-down,
+						span.angle-up{
+							cursor: pointer;
+							display: none;
+							position: absolute;
+							right: 20px;
+							top: 25px;
+							color: #ccc;
+							z-index: 999;
+						}
+						span.angle-down{
+							display: block;
+						}
+						.left-first-col{
+							padding-left: 40px;
+							padding-top:10px;
+						}
+						.summary-header{
+							    font-size: 16px;
+								line-height: 2;
+								color: #333333;
+								font-weight: bold;
+						}
+						.summary-value{
+							    font-size: 14px;
+    							line-height: 1.68;
+								color: #a5a5a5;
+						}
+						.gift-detail-mobile-container{
+							.close-gift-detail{
+
+							}
+							p.theader{
+								font-size: 24px;
+  								line-height: 1.54;
+							  	color: #4f5a67;
+								font-weight: 600;
+							}
+							p.tdata{
+							  font-size: 16px;
+							  font-weight: 300;
+							  line-height: 1.63;
+							  color: #47515c;
+							}
+						}
+					}
+				}
+
+
+			.gift-o-summary
+			{
+
+				.summary-responsive{
+
+				}
+			}
+		}
+		}
+}
+
 @media (min-width: 414px) and (max-width : 736px) {
 	.navbar-brand{ border: 0px solid #ccc;}
 		.gift-o-holder{

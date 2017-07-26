@@ -46,21 +46,25 @@ jQuery(document).ready(function() {
 
 	//Toggle Gift Details in Gift order summary
 	$('.show-gift-details').on('click', function(e){
-		$(this).toggleClass('open');
-		var toToggle = $(this).closest('tr').next();
-			$(toToggle).show('300');
-			$(this).find('span.acs').show('300');
-			$(this).find('span.dsc').hide('300');
+			if($(this).hasClass('open')){
+				$(this).closest('tr').next().hide();
+				$(this).removeClass('open');
+				$(this).find('span.acs').hide();
+				$(this).find('span.dsc').show();
+			} else {
+				var toToggle = $(this).closest('tr').next();
+				$(toToggle).show('300');
+				$(this).addClass('open');
+				$(this).find('span.acs').show();
+				$(this).find('span.dsc').hide();
+			}
 	});
-	
-	$('.show-gift-details.open').on('click', function(e){
 
-	});
 
 	$('th.close-gift-o-details').on('click', function(e){
 		var parentTable = $(this).closest('table').parent().parent().hide('300');
-		$(parentTable).prev().find('span.acs').hide('300');
-		$(parentTable).prev().find('span.dsc').show('300');
+		$(parentTable).prev().find('span.acs').hide();
+		$(parentTable).prev().find('span.dsc').show();
 	});
 	//Gift order toggleing in mobile	
 	$('.sub-title.visible-xs').on('click', function(e){
@@ -80,8 +84,7 @@ jQuery(document).ready(function() {
 			$("#gift-title .sub-title.visible-xs").addClass('active');
 		}	
 	});
-	
-	
+
 	//Toggle Gift Details in Table - Responsive
 	$('span.angle-down').on('click', function(e){
 		$(this).hide();
@@ -97,5 +100,18 @@ jQuery(document).ready(function() {
 		$('span.angle-down').show();
 	});
 	
+	$('.gift-summ-mobile-container .angle-up').on('click', function(){
+		$(this).hide();
+		$('.gift-detail-mobile-container').hide('300');
+		$('span.angle-down').show();
+	});
+	$('.gift-summ-mobile-container .angle-down').on('click', function(){
+		$(this).hide();
+		$('.gift-detail-mobile-container').show('300');
+		$('span.angle-up').show();
+	});
 
+	$('.close-gift-detail').on('click', function(){
+		$(this).closest('.gift-detail-mobile-container').hide();
+	})
 });

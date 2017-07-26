@@ -329,24 +329,8 @@ a.show-gift-details:hover {
   padding-right: 0;
   padding-left: 0;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  .navbar-brand {
-    border: 0px solid blue;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-value {
-    font-size: 14px !important;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-header {
-    font-size: 18px !important;
-  }
-}
-@media (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
-  .navbar-brand {
-    border: 0px solid yellow;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .portrait-w {
-    width: 100%;
-  }
+.gift-detail-mobile-container {
+  display: none;
 }
 @media (min-width: 320px) and (max-width: 568px) {
   #sidebar {
@@ -629,126 +613,23 @@ a.show-gift-details:hover {
     padding-left: 25px;
   }
 }
-@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   .navbar-brand {
-    border: 0px solid green;
-  }
-  #sidebar {
-    left: -320px;
-  }
-  .gift-o-inner .left-row .gift-holder {
-    margin: 0;
-    width: 100%;
-  }
-  .gift-o-inner .left-row .gift-holder figure {
-    margin: 0;
-  }
-  .gift-o-inner .left-row .gift-holder figure img {
-    height: 250px;
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  .gift-o-inner .left-row .gift-holder figure figcaption {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container {
-    box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
-    border: solid 1px #c8c8c8;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .col-xs-6 {
-    padding-left: 0;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-down,
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-up {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    color: #ccc;
-    z-index: 999;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-down {
-    display: block;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .summary-header {
-    font-size: 23.4px;
-    line-height: 3.41;
-    color: #333333;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .summary-value {
-    font-size: 22px;
-    line-height: 1.68;
-    color: #a5a5a5;
-  }
-  .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
-    margin-bottom: 2em;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail #gift-o-detail {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .col-xs-6 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
-    font-size: 18.5px !important;
-  }
-  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.address {
-    line-height: 0.999 !important;
-  }
-}
-@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
-  .navbar-brand {
-    border: 0px solid #fff;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .col-xs-6 {
-    padding-left: 40px;
-    padding-top: 10px;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-down,
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-up {
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    color: #ccc;
-    z-index: 999;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-down {
-    display: block;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .left-first-col {
-    padding-left: 40px;
-    padding-top: 10px;
-  }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-header {
-    font-size: 16px;
-    line-height: 2;
-    color: #333333;
-    font-weight: bold;
+    border: 0px solid blue;
   }
   .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-value {
-    font-size: 14px;
-    line-height: 1.68;
-    color: #a5a5a5;
+    font-size: 14px !important;
   }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .gift-detail-mobile-container p.theader {
-    font-size: 24px;
-    line-height: 1.54;
-    color: #4f5a67;
-    font-weight: 600;
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-header {
+    font-size: 18px !important;
   }
-  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .gift-detail-mobile-container p.tdata {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.63;
-    color: #47515c;
+}
+@media (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+  .navbar-brand {
+    border: 0px solid yellow;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .portrait-w {
+    width: 100%;
   }
 }
 @media (min-width: 375px) and (max-width: 667px) {
@@ -1037,6 +918,128 @@ a.show-gift-details:hover {
   }
   #ShowMyModal .modal-body .gift-description {
     padding-left: 25px;
+  }
+}
+@media (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+  .navbar-brand {
+    border: 0px solid green;
+  }
+  #sidebar {
+    left: -320px;
+  }
+  .gift-o-inner .left-row .gift-holder {
+    margin: 0;
+    width: 100%;
+  }
+  .gift-o-inner .left-row .gift-holder figure {
+    margin: 0;
+  }
+  .gift-o-inner .left-row .gift-holder figure img {
+    height: 250px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .gift-o-inner .left-row .gift-holder figure figcaption {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container {
+    box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
+    border: solid 1px #c8c8c8;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .col-xs-6 {
+    padding-left: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-down,
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-up {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: #ccc;
+    z-index: 999;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container span.angle-down {
+    display: block;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .summary-header {
+    font-size: 23.4px;
+    line-height: 3.41;
+    color: #333333;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summ-mobile .gift-summ-mobile-container .summary-value {
+    font-size: 22px;
+    line-height: 1.68;
+    color: #a5a5a5;
+  }
+  .gift-o-holder .right-row .gift-o-summary tr.visible-xs {
+    margin-bottom: 2em;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail #gift-o-detail {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail .col-xs-6 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.detail-title {
+    font-size: 18.5px !important;
+  }
+  .gift-o-holder .right-row .gift-o-summary .gift-summary-detail p.address {
+    line-height: 0.999 !important;
+  }
+}
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+  .navbar-brand {
+    border: 0px solid #fff;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .col-xs-6 {
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-down,
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-up {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: #ccc;
+    z-index: 999;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container span.angle-down {
+    display: block;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .left-first-col {
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-header {
+    font-size: 16px;
+    line-height: 2;
+    color: #333333;
+    font-weight: bold;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .summary-value {
+    font-size: 14px;
+    line-height: 1.68;
+    color: #a5a5a5;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .gift-detail-mobile-container p.theader {
+    font-size: 24px;
+    line-height: 1.54;
+    color: #4f5a67;
+    font-weight: 600;
+  }
+  .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container .gift-detail-mobile-container p.tdata {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    color: #47515c;
   }
 }
 @media (min-width: 414px) and (max-width: 736px) {
