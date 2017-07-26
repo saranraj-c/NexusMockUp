@@ -63,7 +63,7 @@ jQuery(document).ready(function() {
 		$(parentTable).prev().find('span.dsc').show('300');
 	});
 	//Gift order toggleing in mobile	
-	$('.sub-title').on('click', function(e){
+	$('.sub-title.visible-xs').on('click', function(e){
 		var self = this;
 		var CurrentlyClicked = $(this).data('source-event').toLowerCase(); 
 		var summaryList = this.dataset.summaryToshow; //$(this).data('summary-toShow');		
@@ -71,13 +71,13 @@ jQuery(document).ready(function() {
 		if(CurrentlyClicked == 'gift'){
 			$("#gitf_items").show('300');
 			$("#gitf_ord_summary").hide('300');	
-			$('.sub-title.active').removeClass('active');
-			$(this).addClass('active');
+			$('.sub-title').removeClass('active');
+			$("#history-title .sub-title.visible-xs").addClass('active');
 		} else {		
 			$("#gitf_ord_summary").show('300');
 			$("#gitf_items").hide('300');
-			$('.sub-title.active').removeClass('active');
-			$(this).addClass('active');
+			$('.sub-title').removeClass('active');
+			$("#gift-title .sub-title.visible-xs").addClass('active');
 		}	
 	});
 	
@@ -87,14 +87,14 @@ jQuery(document).ready(function() {
 		$(this).hide();
 		$('.gift-o-detail').hide();
 		$(this).next().show();
-		$(this).parent().next().show('300');
+		$(this).parent().next().show();
 
 	});
 	
 	$('span.angle-up, .close-gift-detail').on('click', function(e){					
 		$('.gift-o-detail').hide('300');
 		$('span.angle-up').hide();
-		$('span.angle-down').show('300');
+		$('span.angle-down').show();
 	});
 	
 

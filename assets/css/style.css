@@ -1062,17 +1062,6 @@ ul.sidebar-nav .sidebar_menu.collapsed li a {
   .header-logo {
     height: 60px;
   }
-  .header-logo a.navbar-brand {
-    width: 85px;
-    height: 16px;
-    font-size: 22px;
-    line-height: 1.18;
-    letter-spacing: 4.4px;
-    text-align: left;
-    padding: 0;
-    margin-top: 17px;
-    padding-left: 0px;
-  }
 }
 @media (min-width: 414px) and (max-width: 736px) {
   .navbar-fixed-top {
