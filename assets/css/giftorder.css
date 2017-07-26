@@ -719,6 +719,7 @@ a.show-gift-details:hover {
   }
   .gift-o-holder .right-row .gift-summ-mobile .gift-summ-mobile-container {
     padding: 20px;
+    margin-bottom: 50px;
     box-shadow: 0px 3px 8px 0 rgba(1, 1, 1, 0.1);
     border: solid 1px #c8c8c8;
     background-color: #fff;
