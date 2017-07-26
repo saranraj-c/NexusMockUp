@@ -53,6 +53,10 @@ jQuery(document).ready(function() {
 			$(this).find('span.dsc').hide('300');
 	});
 	
+	$('.show-gift-details.open').on('click', function(e){
+
+	});
+
 	$('th.close-gift-o-details').on('click', function(e){
 		var parentTable = $(this).closest('table').parent().parent().hide('300');
 		$(parentTable).prev().find('span.acs').hide('300');
