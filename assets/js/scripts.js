@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 	 $('#icon-bar-responsive').on('click', function(){
         $("#icon-bar-responsive, nav.header-responsive").addClass('responsive-toggle');
         $("#sidebar").animate({ "left": "0", "width":"320" }).css("display","block");
-        //$("#overlay").show();
+        $("#overlay").show();
     });
 //	setTimeout( function () {
 //		$('.mobile-back-arrow').trigger('click');

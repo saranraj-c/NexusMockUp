@@ -160,6 +160,7 @@ a.show-gift-details:hover {
   height: 17px;
   font-size: 22px;
   color: #999999;
+  margin-left: 15px;
 }
 .gift-o-holder .left-row {
   max-height: 100vh;
